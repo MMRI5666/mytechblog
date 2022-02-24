@@ -25,6 +25,10 @@ fastbook.setup_book()
      |████████████████████████████████| 130 kB 56.7 MB/s 
 Mounted at /content/gdrive
 
+     # import libraries: fastbook, fastai, and pandas
+     from fastbook import *
+     from fastai.vision.all import *
+     import pandas as pd
 
 In a computer, everything is represented as a number, therefor, to view the numbers that make up this image, we have to convert it to NumPy or PyTorch tensor.
 
