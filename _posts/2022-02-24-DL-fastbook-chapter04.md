@@ -68,4 +68,4 @@ stacked_threes.shape
      torch.Size([6131, 28, 28])
 
 {% include info.html text="Definition:
-<br>dgdfgdfgdfgdfg" %}
+<br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
