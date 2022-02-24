@@ -1,4 +1,4 @@
-# This is chapter 4 of Deep Learning for Coders with fastai & PyTorch
+# This is chapter 4 of Deep Learning for Coders with fastai \& PyTorch
 
 Here's the table of contents:
 
