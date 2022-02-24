@@ -84,4 +84,13 @@ stacked_threes.shape[1]
      28
 
 **Step 3**: Computing what the ideal 3 and 7 look like through calculating the mean of all the image tensors by calling mean for every index position over images along dimension 0 of both stacked rank-3 tensor.
+```python
+# calculating mean for index position over the images along dimension 0 
+# of the both rank-0 stacked tensors of 3s and 7s
+mean3 = stacked_threes.mean(0)
+mean7 = stacked_sevens.mean(0)
 
+#showing ideal 3
+show_image(mean3)
+```
+     <matplotlib.axes._subplots.AxesSubplot at 0x7f07e3e44890>
