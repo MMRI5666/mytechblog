@@ -40,3 +40,6 @@ In a computer, everything is represented as a number, therefore, to view the num
 ## Basic Image Classifier Model
 This section of the book comes up the idea of using the pixel similarity as the very basic method to classify images. For this purpose, the average pixel value for every pixel of the 3s samples, and the for 7s samples are calculated. As a result, we have two arrays/tensors containing the pixel values for two images that we might call the "ideal" 3 and 7. Hence, to classify an image as 3 or 7, we can evaluate which of these two ideal digits the image is similar to.
 
+### Constructing the base model:
+**Step 1**: Calculating the average of pixel values of each of two sample groups of 3s and 7s.
+Creating a tensor containing all of our 3s stacked together. For this, Python list comprehension is used to create a plain list of the single image tensors.
