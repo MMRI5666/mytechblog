@@ -66,3 +66,6 @@ stacked_sevens = torch.stack(seven_tensors).float() / 255
 stacked_threes.shape
 ```
      torch.Size([6131, 28, 28])
+
+{% include info.html text="Definition:
+dgdfgdfgdfgdfg" %}
