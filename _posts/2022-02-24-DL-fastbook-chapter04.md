@@ -23,7 +23,8 @@ fastbook.setup_book()
      |████████████████████████████████| 51 kB 380 kB/s 
      |████████████████████████████████| 558 kB 55.2 MB/s 
      |████████████████████████████████| 130 kB 56.7 MB/s 
-Mounted at /content/gdrive
+     Mounted at /content/gdrive
+
 ```python
 # import libraries: fastbook, fastai, and pandas
 from fastbook import *
