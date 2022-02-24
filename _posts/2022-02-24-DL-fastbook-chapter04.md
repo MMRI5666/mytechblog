@@ -95,7 +95,7 @@ show_image(mean3)
 ```
 ![ideal3 image](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png)
 
-![](/images/logo.png "fast.ai's logo")
+![fast.ai's logo](/images/logo.png)
 ![](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png)
 
 ### Defining Loss Function
