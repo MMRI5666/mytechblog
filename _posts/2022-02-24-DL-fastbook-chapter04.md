@@ -94,3 +94,8 @@ mean7 = stacked_sevens.mean(0)
 show_image(mean3)
 ```
 ![](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png "ideal 3")
+
+### Defining Loss Function
+Now that the 3-or-7 classifier model is ready to use, we can pick up an arbitrary 3 and calculate its distance from the "ideal digits". Two main alternatives to measure distance in this case are as:
+* MAE: the Mean absolute value of difference, which is also called L1 norm.
+
