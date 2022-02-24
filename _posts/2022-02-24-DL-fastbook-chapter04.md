@@ -82,3 +82,6 @@ stacked_threes.ndim
 stacked_threes.shape[1]
 ```
      28
+
+**Step 3**: Computing what the ideal 3 and 7 look like through calculating the mean of all the image tensors by calling mean for every index position over images along dimension 0 of both stacked rank-3 tensor.
+
