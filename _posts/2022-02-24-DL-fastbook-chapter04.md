@@ -93,9 +93,11 @@ mean7 = stacked_sevens.mean(0)
 #showing ideal 3
 show_image(mean3)
 ```
-     ![ideal3 image](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png)
+
+![ideal3 image](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png)
 
 ![fast.ai's logo](/images/logo.png)
+
 ![](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png)
 
 ### Defining Loss Function
