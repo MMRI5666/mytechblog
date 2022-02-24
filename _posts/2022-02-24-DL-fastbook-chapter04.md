@@ -98,7 +98,7 @@ show_image(mean3)
 ### Defining Loss Function
 Now that the 3-or-7 classifier model is ready to use, we can pick up an arbitrary 3 and calculate its distance from the "ideal digits". Two main alternatives to measure distance in this case are as:
 * **MAE**: the Mean absolute value of difference, which is also called *L1 norm*.
-```pyrhon
+```python
 # calcuting the distance from ideal 3 using MEA and RSME
 dist_3_mea = (a_3 - mean3).abs().mean()
 dist_7_mea = (a_3 - mean7).abs().mean()
