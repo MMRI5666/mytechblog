@@ -37,3 +37,6 @@ In a computer, everything is represented as a number, therefore, to view the num
 - [NumPy arrays](https://numpy.org/doc/stable/reference/generated/numpy.array.html)
 - [PyTorch tensors](https://pytorch.org/docs/stable/tensors.html)
 
+## Basic Image Classifier Model
+This section of the book comes up the idea of using the pixel similarity as the very basic method to classify images. For this purpose, the average pixel value for every pixel of the 3s samples, and the for 7s samples are calculated. As a result, we have two arrays/tensors containing the pixel values for two images that we might call the "ideal" 3 and 7. Hence, to classify an image as 3 or 7, we can evaluate which of these two ideal digits the image is similar to.
+
