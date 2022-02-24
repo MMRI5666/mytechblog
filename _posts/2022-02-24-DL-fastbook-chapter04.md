@@ -42,3 +42,15 @@ This section of the book comes up the idea of using the pixel similarity as the 
 
 ### Constructing the base model:
 **Step 1**: Calculating the average of pixel values of each of two sample groups of 3s and 7s. Creating a tensor containing all of our 3s stacked together. For this, Python list comprehension is used to create a plain list of the single image tensors.
+```python
+# creating a tensor containing all of 3s sample images stacked together 
+# using list comprehension
+three_tensors= [tensor(Image.open(img)) for img in threes]
+
+# and the same for 7s sample images
+seven_tensors = [tensor(Image.open(img)) for img in sevens]
+
+# checking the number of items in each tensor
+len(three_tensors), len(seven_tensors)
+```
+     (6131, 6265)
