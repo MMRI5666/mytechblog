@@ -93,5 +93,4 @@ mean7 = stacked_sevens.mean(0)
 #showing ideal 3
 show_image(mean3)
 ```
-     <matplotlib.axes._subplots.AxesSubplot at 0x7f07e3e44890>
-     ![](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png "ideal 3")
+![](/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png "ideal 3")
