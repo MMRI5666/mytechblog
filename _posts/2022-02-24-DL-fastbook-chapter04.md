@@ -116,3 +116,17 @@ dist_3_rsme = ((a_3 - mean3) ** 2).mean().sqrt()
 dist_3_rsme, dist_7_rsme 
 ```
      (tensor(0.2021), tensor(0.3021))
+
+* PyTorch provides both of measures mentioned above as **loss functions**, which can be found inside  `torch.nn.functional` (recommended by PyTorch team to be imported as `F`). This function is also available in `fastai` by default as `F`.
+
+```python
+# calculating the distance from ideal 3 using loss functions in fastai
+F.l1_loss(a_3.float(), mean3), F.mse_loss(a_3, mean3).sqrt()
+```
+     (tensor(0.1114), tensor(0.2021))
+```python
+# calculating the distance from ideal 7 using loss functions in fastai
+F.l1_loss(a_3.float(), mean7), F.mse_loss(a_3, mean7).sqrt()
+```
+     (tensor(0.1586), tensor(0.3021))
+
