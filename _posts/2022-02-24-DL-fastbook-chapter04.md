@@ -69,3 +69,16 @@ stacked_threes.shape
 
 {% include info.html text="**Definition**:
 <br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
+```python
+# rank or dimension of a tensor using len()
+len(stacked_threes.shape)
+
+# or directly using ndim
+stacked_threes.ndim
+```
+     3
+
+```python
+stacked_threes.shape[1]
+```
+     28
