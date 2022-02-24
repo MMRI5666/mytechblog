@@ -124,6 +124,7 @@ dist_3_rsme, dist_7_rsme
 F.l1_loss(a_3.float(), mean3), F.mse_loss(a_3, mean3).sqrt()
 ```
      (tensor(0.1114), tensor(0.2021))
+
 ```python
 # calculating the distance from ideal 7 using loss functions in fastai
 F.l1_loss(a_3.float(), mean7), F.mse_loss(a_3, mean7).sqrt()
