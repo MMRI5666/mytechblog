@@ -94,7 +94,7 @@ mean7 = stacked_sevens.mean(0)
 show_image(mean3)
 ```
 
-![ideal3 image](/master/assets/ideal_3.png)
+![ideal3 image](/assets/ideal_3.png)
 
 ![fast.ai's logo](/images/logo.png)
 
