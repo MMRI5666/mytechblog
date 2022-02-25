@@ -97,7 +97,19 @@ show_image(mean3)
 ![ideal 3](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/ideal_3.png "ideal 3")
 
 ### Defining Loss Function
-Now that the 3-or-7 classifier model is ready to use, we can pick up an arbitrary 3 and calculate its distance from the "ideal digits". Two main alternatives to measure distance in this case are as:
+Now that the 3-or-7 classifier model is ready to use, we can pick up an arbitrary 3 and calculate its distance from the "ideal digits".
+First we need to select an arbitrary image, e.g. from 3s sample collection, as shown below:
+
+```python
+# select an arbitrary 3 from 3s stacked tensor
+a_3 = stacked_threes[1]
+
+# showing the selected image
+show_image(a_3)
+```
+![selected 3](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/arbitrary_3.png "selected 3")
+
+Two main alternatives to measure distance in this case are as:
 * **MAE**: the Mean absolute value of difference, which is also called *L1 norm*.
 ```python
 # calcuting the distance from ideal 3 using MEA and RSME
