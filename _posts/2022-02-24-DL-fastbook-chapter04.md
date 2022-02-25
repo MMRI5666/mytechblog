@@ -144,4 +144,4 @@ F.l1_loss(a_3.float(), mean7), F.mse_loss(a_3, mean7).sqrt()
 ```
      (tensor(0.1586), tensor(0.3021))
 
-The values calculated for the L1 norm (MEA) and the L2 norm (RSME) show that the distance between the selected 3 and the "ideal 3" is less than the distance to the ideal 7. Hence, we can conclude that this simple classifier model can give us the right prediction in this case.
+The values calculated for the <strong>L1 norm (MEA)</strong> and the <strong>L2 norm (RSME)</strong> show that the distance between the selected 3 and the "ideal 3" is less than the distance to the ideal 7. Hence, we can conclude that this simple classifier model can give us the right prediction in this case.
