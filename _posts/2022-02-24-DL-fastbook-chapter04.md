@@ -301,6 +301,21 @@ As we see, it return the value of the derivative of the quadratic function x ** 
 
 >The *"backward"* here refers to backpropagation, which the name given to the process of calculating the derivative of each layer. This is called backward pass of the network, as opposed to forward pass, which is where the activation are calculated.
 
+When we want to calculate the gradient for a vector, we have add sum to our function to return a scalar as a value to function caller.
+```python
+def f(x):
+  return (x ** 2).sum()
 
+xt = tensor(3., 4., 10.).requires_grad_()
+yt = f(xt)
+yt
+```
+     tensor(125., grad_fn=<SumBackward0>)
+And our gradient will be as shown below:
+```python
+yt.backward()
+xt.grad
+```
+     tensor([ 6.,  8., 20.])
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
