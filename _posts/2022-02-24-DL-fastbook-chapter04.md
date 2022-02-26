@@ -271,6 +271,26 @@ In mathematics, a function's *gradient* is simply another function, whereas in d
 
 >The gradients indicates the slope of our function, and do not specify exactly how far to adjust parameters. They can, however, give us an indication of how far, so as if the slope is very large, that may suggest more adjustments to do, whereas if the slope is very small, that may suggest that we are close to the optimal value.
 
+Let's see how PyTorch makes life more easier for us by calculating greadient. We start with pick a tensor value and let PyTorch know that we want to calculate gradient with respect to the variable x at that value by calling the function `requires_grad_`. This way, when you ask PyTorch to calculate the gradient, it will remember to care about other direct calculations.
+
+```python
+xt = tensor(3.).requires_grad_()
+
+# calculating the function value with x value of 3.0
+yt = f(xt)
+yt
+```
+     tensor(9., grad_fn=<PowBackward0>)
+Not only does the result show the function value, but it also shows that it has a gradient function that can be called to calculate the gradient when needed.
+
+Now, we ask PYTorch to calculate the gradient and show it by retrieving `grad` property of `x` as shown below:
+```python
+yt.backward()
+
+xt.grad
+```
+     tensor(6.)
+
 
 
 ### Stepping with a Learning Rate
