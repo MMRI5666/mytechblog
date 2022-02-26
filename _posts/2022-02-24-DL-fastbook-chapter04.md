@@ -69,6 +69,7 @@ stacked_threes.shape
 
 {% include info.html text="<strong>Definition</strong>:
 <br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
+
 ```python
 # rank or dimension of a tensor using len()
 len(stacked_threes.shape)
@@ -291,6 +292,12 @@ xt.grad
 ```
      tensor(6.)
 
+As we see, it return the value of the derivative of the quadratic function x ** 2, which is 2 * x.
+
+{% include info.html text="<strong>Definition</strong>:
+<br>Note that when grad is used the gradient function calculated by PyTorch will be exhausted and reusing it will raise an error. In prior to reusing grad the the function f(xt) must be re-calculated, i.e., (yt = f(xt))." %}
+
+>The *"backward"* here refers to backpropagation, which the name given to the process of calculating the derivative of each layer. This is called backward pass of the network, as opposed to forward pass, which is where the activation are calculated.
 
 
 ### Stepping with a Learning Rate
