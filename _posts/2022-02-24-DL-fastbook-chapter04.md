@@ -318,5 +318,6 @@ yt.backward()
 xt.grad
 ```
      tensor([ 6.,  8., 20.])
+
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
