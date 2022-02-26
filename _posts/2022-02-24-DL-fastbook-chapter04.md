@@ -242,7 +242,6 @@ Deep learning models are opitmized by calculating the *gradient* which indicates
 In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value.
 
 
-<aside class="note"><b>Note:</b> All VPC networks include firewall
-rules.</aside>
-
+| :memo:        | Take note of this       |
+|---------------|:------------------------|
 
