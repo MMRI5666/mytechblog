@@ -245,6 +245,16 @@ In mathematics, a function's *gradient* is simply another function, whereas in d
 
 >The gradients indicates the slope of our function, and do not specify exactly how far to adjust parameters. They can, however, give us an indication of how far, so as if the slope is very large, that may suggest more adjustments to do, whereas if the slope is very small, that may suggest that we are close to the optimal value.
 
+This section of the book tries to explain the concept of how calculating greadient can help us optimize the learning proces of a deep learning model with defining a quadratic function as loss function as shown below:
+
+```python
+def f(x):
+  return x ** 2
+
+plot_function(f, 'x','x**2')
+```
+![selected 3](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_01.png "selected 3")
+
 
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
