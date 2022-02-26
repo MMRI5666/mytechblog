@@ -244,13 +244,15 @@ In mathematics, a function's *gradient* is simply another function, whereas in d
 {% include tip.html text="<strong>Definition</strong>:
 <br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
 
-<style>
-.alert-green {
-  color: rgb(60,118,61) !important;
-} 
-ytrytrytrytryr
-</style>
+<div class="panel panel-info">
+**Note**
+{: .panel-heading}
+<div class="panel-body">
 
+NOTE DESCRIPTION
+
+</div>
+</div>
 
 
 
