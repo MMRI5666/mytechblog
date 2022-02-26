@@ -255,7 +255,7 @@ plot_function(f, 'x','x**2')
 ```
 ![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_01.png)
 
-For initialize step defined above, if we select a random value for a paramete, calculating the value of loss results in having a point on the plot as seen below:
+Based on the *initialize* step defined above, if we select a random value for a parameter, calculating the value of loss results in having a point on the plot as seen below:
 
 ```python
 plot_function(f, 'x', 'x**2')
