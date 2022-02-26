@@ -236,3 +236,11 @@ Assuming that X is the image, represented as a vector, i.e. all the rows stacked
 <strong>Loss</strong>: testing the effetiveness of any current weight assignment in terms of actual performance.<br>
 <strong>Step</strong>: to figure out whether a weight should be increased/descressed a bit. Basically, this may most likely to be too slow, but calculating *gradient* assist us to comprehend in which direction, and by approximately how much, to change each weight.<br>
 <strong>Stop</strong>: deciding how many epochs to train the model for.
+
+### Calculating Gradient
+Deep learning models are opitmized by calculating the *gradient* which indicates how much we need to adjust each weight to improve the model.
+In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value. 
+> [!TIP]
+>Some people may concerns about complication of calculating gradient, but a good news is that PyThorch take the budden by automatically computing the derivative of nearly any function!
+
+
