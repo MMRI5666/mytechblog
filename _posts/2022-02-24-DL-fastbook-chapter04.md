@@ -244,7 +244,9 @@ In mathematics, a function's *gradient* is simply another function, whereas in d
 {% include tip.html text="<strong>Definition</strong>:
 <br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
 
-> [!TIP]
-> Some people may concerns about complication of calculating gradient, but a good news is that PyTorch takes the burden by automatically computing the derivative of nearly any function!
+**Warning:**
+Some people may concerns about complication of calculating gradient, but a good news is that PyTorch takes the burden by automatically computing the derivative of nearly any function!
+
+
 
 
