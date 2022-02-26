@@ -208,3 +208,10 @@ accuracy_3s, accuracy_7s, (accuracy_3s + accuracy_7s) / 2
   (tensor(0.9168), tensor(0.9854), tensor(0.9511))
 
 The result above shows an accuracy over 90% on both predicting correctly 3s and correctly detecting 7s as not beeing a 3, which is quite accetable for such simple classifier model.
+
+## Stochastic Gradient Descent (DSG)
+
+
+> <strong>Definition of machine learning according to Arthur Samuel</strong><br> Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a  mechanism for altering the weight assignment so as to maximize the performance.  We need not go into the details of such a procedure to see that it could be made entirely automatic and see that a machine so programmed would “learn” from its experience.
+
+As mentioned before our bacis 3-or-7 classifier does not adopt any learning component. To enable it to take advantage of the power of deep learning, we will first have to represent it based on the Samuel's definition.
