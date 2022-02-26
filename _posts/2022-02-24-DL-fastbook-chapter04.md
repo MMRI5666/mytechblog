@@ -234,5 +234,5 @@ Assuming that X is the image, represented as a vector, i.e. all the rows stacked
 
 <strong>Initialize</strong>: setting the parameters to random values.<br>
 <strong>Loss</strong>: testing the effetiveness of any current weight assignment in terms of actual performance.<br>
-<strong>Step</strong>: to figure out whether a weight should be increased/descressed a bit. Basically, this may most likely to be too slow, but calculating ==*gradient*== assist us to comprehend in which direction, and by approximately how much, to change each weight.<br>
-<strong>Stop</strong>: 
+<strong>Step</strong>: to figure out whether a weight should be increased/descressed a bit. Basically, this may most likely to be too slow, but calculating *gradient* assist us to comprehend in which direction, and by approximately how much, to change each weight.<br>
+<strong>Stop</strong>: deciding how many epochs to train the model for.
