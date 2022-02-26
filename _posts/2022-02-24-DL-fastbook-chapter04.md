@@ -248,5 +248,8 @@ In mathematics, a function's *gradient* is simply another function, whereas in d
 Some people may concerns about complication of calculating gradient, but a good news is that PyTorch takes the burden by automatically computing the derivative of nearly any function!
 
 
+> ###### Note
+> This could be a note
+
 
 
