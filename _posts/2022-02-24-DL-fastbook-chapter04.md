@@ -231,3 +231,8 @@ Assuming that X is the image, represented as a vector, i.e. all the rows stacked
 5. *Step*, making decision between change all the weights based on the calculation, or leave it unchanged and terminate the search process.
 6. Go back to step 2 and *repeat* the process.
 7. Iterate until the stop criteria are met (e.g. the model is well-trained enough or the waiting time has been exceeded) are met.
+
+<strong>Initialize</strong>: setting the parameters to random values.<br>
+<strong>Loss</strong>: testing the effetiveness of any current weight assignment in terms of actual performance.<br>
+<strong>Step</strong>: to figure out whether a weight should be increased/descressed a bit. Basically, this may most likely to be too slow, but calculating *gradient* assist us to comprehend in which direction, and by approximately how much, to change each weight.<br>
+<strong>Stop</strong>: 
