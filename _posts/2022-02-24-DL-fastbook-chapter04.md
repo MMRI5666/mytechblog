@@ -264,13 +264,14 @@ In view of what has been demonstrated above, we can conclude that it is possible
 
 ![quadratic function plot 4](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_04.png)
 
+>The gradients indicates the slope of our function, and do not specify exactly how far to adjust parameters. They can, however, give us an indication of how far, so as if the slope is very large, that may suggest more adjustments to do, whereas if the slope is very small, that may suggest that we are close to the optimal value.
+
 ### Calculating Gradient
 Deep learning models are opitmized by calculating the *gradient* which indicates how much we need to adjust each weight to improve the model.
 In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value.
 
 >Some people may concerns about complication of calculating gradient, but a good news is that PyThorch take the budden by automatically computing the derivative of nearly any function!
 
->The gradients indicates the slope of our function, and do not specify exactly how far to adjust parameters. They can, however, give us an indication of how far, so as if the slope is very large, that may suggest more adjustments to do, whereas if the slope is very small, that may suggest that we are close to the optimal value.
 
 Let's see how PyTorch makes life more easier for us by calculating greadient. We start with pick a tensor value and let PyTorch know that we want to calculate gradient with respect to the variable x at that value by calling the function `requires_grad_`. This way, when you ask PyTorch to calculate the gradient, it will remember to care about other direct calculations.
 
@@ -282,6 +283,7 @@ yt = f(xt)
 yt
 ```
      tensor(9., grad_fn=<PowBackward0>)
+
 Not only does the result show the function value, but it also shows that it has a gradient function that can be called to calculate the gradient when needed.
 
 Now, we ask PYTorch to calculate the gradient and show it by retrieving `grad` property of `x` as shown below:
@@ -294,7 +296,7 @@ xt.grad
 
 As we see, it return the value of the derivative of the quadratic function x ** 2, which is 2 * x.
 
-{% include info.html text="<strong>Definition</strong>:
+{% include warning.html text="<strong>Definition</strong>:
 <br>Note that when grad is used the gradient function calculated by PyTorch will be exhausted and reusing it will raise an error. In prior to reusing grad the the function f(xt) must be re-calculated, i.e., (yt = f(xt))." %}
 
 >The *"backward"* here refers to backpropagation, which the name given to the process of calculating the derivative of each layer. This is called backward pass of the network, as opposed to forward pass, which is where the activation are calculated.
