@@ -241,9 +241,10 @@ Assuming that X is the image, represented as a vector, i.e. all the rows stacked
 Deep learning models are opitmized by calculating the *gradient* which indicates how much we need to adjust each weight to improve the model.
 In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value.
 
-Some people may concerns about complication of calculating gradient, but a good news is that PyThorch take the budden by automatically computing the derivative of nearly any function!
+>Some people may concerns about complication of calculating gradient, but a good news is that PyThorch take the budden by automatically computing the derivative of nearly any function!
 
-::: warning
-*here be dragons*
-:::
+>The gradients indicates the slope of our function, and do not specify exactly how far to adjust parameters. They can, however, give us an indication of how far, so as if the slope is very large, that may suggest more adjustments to do, whereas if the slope is very small, that may suggest that we are close to the optimal value.
 
+
+### Stepping with a Learning Rate
+Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
