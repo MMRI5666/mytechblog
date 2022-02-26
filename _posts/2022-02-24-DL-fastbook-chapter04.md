@@ -263,5 +263,8 @@ plt.scatter(-1.5, f(1.5), color='red')
 ```
 ![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_02.png)
 
+The following plot shows that, if we decide to make a small adjustment to the parameter, the slope indicates the displacement of the point.
+![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_03.png)
+
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
