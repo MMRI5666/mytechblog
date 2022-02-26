@@ -253,7 +253,7 @@ def f(x):
 
 plot_function(f, 'x','x**2')
 ```
-![selected 3](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_01.png "selected 3")
+![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_01.png)
 
 
 ### Stepping with a Learning Rate
