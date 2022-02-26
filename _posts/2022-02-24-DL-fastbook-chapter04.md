@@ -261,11 +261,15 @@ Based on the *initialize* step defined above, if we select a random value for a 
 plot_function(f, 'x', 'x**2')
 plt.scatter(-1.5, f(1.5), color='red')
 ```
-![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_02.png)
+![quadratic function plot 1](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_02.png)
 
-The following plot shows that, if we decide to make a small adjustment to the parameter, the slope indicates the displacement of the point.<br><br>
+The following plot shows that, if we decide to make a small adjustment to the parameter, the slope indicates the displacement of the point.<br>
 
-![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_03.png)
+![quadratic function plot 3](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_03.png)
+
+In view of what has been demonstrated above, we can conclude that it is possible to reach the lowest point on our curve by adjusting our weight a little in the direction of the slope, calculating the loss, and making a few adjustments. This basic idea dates back to Isaac Newton, who noted that we can optimize arbitrary functions in this way regardless of their complexity.
+
+![quadratic function plot 4](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_04.png)
 
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
