@@ -215,3 +215,25 @@ The result above shows an accuracy over 90% on both predicting correctly 3s and 
 > <strong>Definition of machine learning according to Arthur Samuel</strong><br> Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a  mechanism for altering the weight assignment so as to maximize the performance.  We need not go into the details of such a procedure to see that it could be made entirely automatic and see that a machine so programmed would “learn” from its experience.
 
 As mentioned before our bacis 3-or-7 classifier does not adopt any learning component. To enable it to take advantage of the power of deep learning, we will first have to represent it based on the Samuel's definition.
+
+## Stochastic Gradient Descent (DSG)
+
+
+> <strong>Definition of machine learning according to Arthur Samuel</strong><br> Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a  mechanism for altering the weight assignment so as to maximize the performance.  We need not go into the details of such a procedure to see that it could be made entirely automatic and see that a machine so programmed would “learn” from its experience.
+
+To enable our simple 3-or-7 classifier to take advantage of the power of deep learning, we will first have to represent it based on Samuel's definition, Instead of trying to find similarity between an image and an "ideal image", a set of weights can be set for each individual pixel, such that the highest weights are assiciated with those pixels most likely to be black for particular category. This can be represented as a function and set of weight values for each possible category, e.g., the probability of being the number of 8:
+
+```python
+def prob_eight(x, w) = (x * w).sum()
+```
+
+Assuming that X is the image, represented as a vector, i.e. all the rows stacked up end to end into a single lone line, and W is the vector of the weights. We aim to search for a specific set of values for W that result in maximizing the function value for those images that are 8s, and in minimizing it for those images that are not.
+
+>The steps required to turn this function into amachine learning classifier:
+1.   *Iinitialize* the weights
+2.   For each image, use these weights to *predict* whether it is likely to be a 3 or a 7.
+3. Based on these predictions, calculate how good the model is (its *loss*)
+4. Calculating the *gradient*, which measures the impact of change in each weight on the its pertinent loss.
+5. *Step*, making decision between change all the weights based on the calculation, or leave it unchanged and terminate the search process.
+6. Go back to step 2 and *repeat* the process.
+7. Iterate until the stop criteria are met (e.g. the model is well-trained enough or the waiting time has been exceeded) are met.
