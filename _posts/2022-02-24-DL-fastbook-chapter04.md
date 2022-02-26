@@ -255,6 +255,13 @@ plot_function(f, 'x','x**2')
 ```
 ![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_01.png)
 
+For initialize step defined above, if we select a random value for a paramete, calculating the value of loss results in having a point on the plot as seen below:
+
+```python
+plot_function(f, 'x', 'x**2')
+plt.scatter(-1.5, f(1.5), color='red')
+```
+![quadratic function plot](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/quad_func_plot_02.png)
 
 ### Stepping with a Learning Rate
 Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
