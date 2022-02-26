@@ -241,7 +241,5 @@ Assuming that X is the image, represented as a vector, i.e. all the rows stacked
 Deep learning models are opitmized by calculating the *gradient* which indicates how much we need to adjust each weight to improve the model.
 In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value.
 
-! This is an info message.
-!v This is a success message.
-!! Consider this a warning.
-!x This is an error message.
+{% include warning.html text="<strong>Definition</strong>:
+<br>Tensor's rank is the number of axes or dimensions in a tensor, shape is the size of each axis of a tensor." %}
