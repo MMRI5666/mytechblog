@@ -311,6 +311,7 @@ yt = f(xt)
 yt
 ```
      tensor(125., grad_fn=<SumBackward0>)
+
 And our gradient will be as shown below:
 ```python
 yt.backward()
