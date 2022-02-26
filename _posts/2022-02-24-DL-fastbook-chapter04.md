@@ -242,3 +242,8 @@ Deep learning models are opitmized by calculating the *gradient* which indicates
 In mathematics, a function's *gradient* is simply another function, whereas in deep learning, *gradient* usually refers to the value of the function's derivative at a given argument value.
 
 Some people may concerns about complication of calculating gradient, but a good news is that PyThorch take the budden by automatically computing the derivative of nearly any function!
+
+::: warning
+*here be dragons*
+:::
+
