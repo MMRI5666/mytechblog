@@ -480,3 +480,5 @@ for i in range(10):
 As expected, the loss values are decreasing. If we start the process over again and plot the function of every iteration rather than printing the loss value, we can observe another important finding.
 
 ![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_03.png "Figure-E")
+
+> Each iteration represents an entirely different quadratic function being tried, on the way to finding the best possible quadratic function.
