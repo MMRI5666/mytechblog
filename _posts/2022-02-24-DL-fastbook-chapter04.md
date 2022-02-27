@@ -461,6 +461,9 @@ def apply_step(params, prn=True):
   if prn:
     print(loss.item())
   return preds
+  
+for i in range(10):
+     apply_step(params)
 ```
      2011.3802490234375
      943.6072998046875
@@ -473,5 +476,7 @@ def apply_step(params, prn=True):
      694.3671875
      694.3612670898438
 
-for i in range(10):
-  apply_step(params)
+
+As expected, the loss values are decreasing. If we start the process over again and plot the function of every iteration rather than printing the loss value, we can observe another important finding.
+
+![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_03.png "Figure-E")
