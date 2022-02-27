@@ -382,7 +382,7 @@ Now we go through our seven-step process"<br>
 params = torch.randn(3).requires_grad_()
 params
 ```
-    tensor([-1.2704,  0.6674, -1.0002], requires_grad=True)
+    tensor([-0.3945,  0.7613, -1.7989], requires_grad=True)
 
 <strong>2. Calculate the predictions</strong>
 ```python
@@ -390,7 +390,7 @@ params
 preds = f(time, params)
 preds
 ```
-     tensor([  -1.0002,   -1.6032,   -4.7470,  -10.4317,  -18.6571,  -29.4234,  -42.7305,  -58.5784,  -76.9671,  -97.8967, -121.3671, -147.3783, -175.9303, -207.0231, -240.6567, -276.8312, -315.5465,  -356.8026, -400.5995, -446.9373], grad_fn=<AddBackward0>)
+    tensor([  -1.7989,   -1.4321,   -1.8542,   -3.0653,   -5.0654,   -7.8545,  -11.4326,  -15.7997,  -20.9557,  -26.9007,  -33.6347,  -41.1577,  -49.4697,  -58.5707,  -68.4607,  -79.1396,  -90.6075, -102.8644, -115.9103, -129.7452], grad_fn=<AddBackward0>)
      
 Here it would a good idea to show how close our predictions are to the targets using a scatter plot as below:
 ```python
@@ -412,4 +412,38 @@ show_preds(preds)
 loss = mse(preds, speed)
 loss
 ```
+    tensor(7654.0732, grad_fn=<MeanBackward0>)
      
+<strong>4. Calculate the gradients</strong>
+```python
+# step 4. calculate the gradients
+loss.backward()
+params.grad
+```
+    tensor([-27986.2461,  -1784.6309,   -139.8551])
+     
+<strong>5. Step the weights</strong><br>
+After calculating the gradients, we'll need to pick a learning rate and use them to improve our parameters.
+```python
+# upadating the parameters based on the calculated gradients
+# and selected learning rate
+lr = 1e-5
+params.data -= lr * params.grad.data
+params.grad = None
+params.data
+```
+     tensor([-0.1146,  0.7792, -1.7975])
+     
+Checking whether the loss has improved:
+```python
+# checking improvement in loss value
+preds = f(time, params)
+mse(preds, speed)
+```
+    tensor(2011.3802, grad_fn=<MeanBackward0>)
+     
+```python
+# visualizing the improvement in loss using scatter plot
+show_preds(preds)
+```
+![predictions_over_targets_01](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png)
