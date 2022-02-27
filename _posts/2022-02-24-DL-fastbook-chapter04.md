@@ -371,3 +371,45 @@ We also need to define the meaning of "best" through defining loss function, whi
 def mse(preds, targets):
   return ((preds - targets) ** 2).mean()
 ```
+
+Now we go through our seven-step process"<br>
+
+<strong>1. Initialize the parameters</strong>
+```python
+#. step 1. 
+### randomly initialize parameters a, b, c
+### require PyTorch to generate gradient function
+params = torch.randn(3).requires_grad_()
+params
+```
+    tensor([-1.2704,  0.6674, -1.0002], requires_grad=True)
+
+<strong>2. Calculate the predictions</strong>
+```python
+# step 2. calculate the predictions
+preds = f(time, params)
+preds
+```
+     tensor([  -1.0002,   -1.6032,   -4.7470,  -10.4317,  -18.6571,  -29.4234,  -42.7305,  -58.5784,  -76.9671,  -97.8967, -121.3671, -147.3783, -175.9303, -207.0231, -240.6567, -276.8312, -315.5465,  -356.8026, -400.5995, -446.9373], grad_fn=<AddBackward0>)
+     
+Here it would a good idea to show how close our predictions are to the targets using a scatter plot as below:
+```python
+# functon to create a plot of predictions over targets
+def show_preds(preds, ax=None):
+  if ax is None:
+    ax = plt.subplots()[1]
+  ax.scatter(time, speed)
+  ax.scatter(time, to_np(preds))
+  ax.set_ylim(-400, 400)
+
+show_preds(preds)
+```
+![predictions_over_targets_01](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_01.png)
+
+<strong>3. Calculate the loss</strong>
+```python
+# step 3. calculate the loss
+loss = mse(preds, speed)
+loss
+```
+     
