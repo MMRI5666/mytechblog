@@ -326,3 +326,12 @@ Most approaches to deep learning come up with basic idea of mutiplying the gradi
 w -= w.grad * lr
 ```
 This is know as *stepping* your parameters, using an *optimization step*.
+
+Selecting a too low learning rate results in very slow learning process as demonstrated in the figure below:
+![quadratic function plot 4](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/learning_rate_effect_00.png)
+
+A too high learning rate may have two adverse impact on the deep learning process as:
+
+
+1.   loss value get worse as illustrated in Figure-A.
+2.   causes the loss bounce around, rather than diverging, in turn can result in increaseing the iterations needed to train successfully.
