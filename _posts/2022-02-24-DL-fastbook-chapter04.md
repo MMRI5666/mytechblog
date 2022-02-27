@@ -320,4 +320,9 @@ xt.grad
      tensor([ 6.,  8., 20.])
 
 ### Stepping with a Learning Rate
-Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1.
+Most approaches to deep learning come up with basic idea of mutiplying the gradient by some small number, called the *learning rate* (LR). Although the learning rate can be set to any arbitrary value, it is commonly set to number between 0.001 and 0.1. The learning rate is selected in deep learning models by trying a few different rates and finding which results in the best model after training. However, there is a better approach called *learning rate finder*, which will be covered in the following chapters of this book. With the learning rate selected, the parameter can be adjusted by using the following function:
+```python
+# lr: learning rate
+w -= w.grad * lr
+```
+This is know as *stepping* your parameters, using an *optimization step*.
