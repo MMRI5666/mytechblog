@@ -449,3 +449,29 @@ show_preds(preds)
 ![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png "Figure-D, new predictions over targets")
 
 The loss has decreased from 7654.0732 to 2011.3802 and the prediction is intuitively improved according to Figure-D.
+
+We need to iterate through these steps.
+```python
+def apply_step(params, prn=True):
+  preds = f(time, params)
+  loss = mse(preds, speed)
+  loss.backward()
+  params.data -= lr * params.grad.data
+  params.grad = None
+  if prn:
+    print(loss.item())
+  return preds
+```
+     2011.3802490234375
+     943.6072998046875
+     741.5486450195312
+     703.3096313476562
+     696.0703125
+     694.697021484375
+     694.4337768554688
+     694.380615234375
+     694.3671875
+     694.3612670898438
+
+for i in range(10):
+  apply_step(params)
