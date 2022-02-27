@@ -364,7 +364,7 @@ def f(t, params):
   return a * (t ** 2) + b * t + c
 ```
 
-We also need to define the meaning of "best" through defining loss function, which will return a value based on prediction and a target. The lowest value of loss function corresponds to the "best" predictions, which are producd via using the "best" function and the "best" set of parameters. The loss function for this problem is defined as below:
+We also need to define the meaning of "best" through defining loss function, which will return a value based on prediction and a target. The lowest value of loss function corresponds to the "best" predictions, which are producd via using the "best" function and the "best" set of parameters. For continous data, using *mean squared error* as the loss function is common as below:
 
 ```python
 # loss function
