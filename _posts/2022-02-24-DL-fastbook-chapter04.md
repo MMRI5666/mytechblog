@@ -356,6 +356,18 @@ plt.scatter(time, speed)
 ```
 ![speed_over_time_01](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/speed_over_time_01.png)
 
+Now we define a function to measure the speed depending on the time. This function also adopts the parameter, which we want to find their best values through training process using SGD. In other words this problem addresses finding the best function that fits the data to finding the best quadratic function. This quadratic function, in turn, is defined by aforementioned parameters as a, b, and c.
 
+```python
+def f(t, params):
+  a, b, c = params
+  return a * (t ** 2) + b * t + c
+```
 
+We also need to define the meaning of "best" through defining loss function, which will return a value based on prediction and a target. The lowest value of loss function corresponds to the "best" predictions, which are producd via using the "best" function and the "best" set of parameters. The loss function for this problem is defined as below:
 
+```python
+# loss function
+def mse(preds, targets):
+  return ((preds - targets) ** 2).mean()
+```
