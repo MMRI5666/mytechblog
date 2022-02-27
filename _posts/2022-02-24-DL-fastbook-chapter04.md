@@ -1,4 +1,4 @@
-# This is chapter 4 of Deep Learning for Coders with fastai and PyTorch
+# The Basic of Learning to Train a Digit Classifier
 
 Here's the table of contents:
 
