@@ -446,4 +446,4 @@ mse(preds, speed)
 # visualizing the improvement in loss using scatter plot
 show_preds(preds)
 ```
-![predictions_over_targets_01](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png)
+![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png)
