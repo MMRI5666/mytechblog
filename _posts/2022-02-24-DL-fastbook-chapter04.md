@@ -436,7 +436,7 @@ params.data
      
 Checking whether the loss has improved:
 ```python
-# checking improvement in loss value
+# checking for improvement in loss value
 preds = f(time, params)
 mse(preds, speed)
 ```
@@ -446,4 +446,6 @@ mse(preds, speed)
 # visualizing the improvement in loss using scatter plot
 show_preds(preds)
 ```
-![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png)
+![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_02.png "Figure-D, new predictions over targets")
+
+The loss has decreased from 7654.0732 to 2011.3802 and the prediction is intuitively improved according to Figure-D.
