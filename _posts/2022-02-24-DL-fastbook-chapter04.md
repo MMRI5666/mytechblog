@@ -482,3 +482,9 @@ As expected, the loss values are decreasing. If we start the process over again 
 ![predictions_over_targets_02](/mytechblog/images/2022-02-24-DL-fastbook-chapter04/prediction_over_targets_03.png "Figure-E")
 
 > Each iteration represents an entirely different quadratic function being tried, on the way to finding the best possible quadratic function.
+
+
+{% include info.html text="<strong>Definition</strong>:
+<br>In neural networks, the w in the equation y=w\*x+b is called the *weights*, and the b is called the *bias*. Together, the weight and *bias* make up the parameters." %}
+
+
