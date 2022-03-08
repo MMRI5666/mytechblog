@@ -6,9 +6,14 @@ Here's the table of contents:
 1. TOC
 {:toc}
 
-## Computer vision begins with Pixels
-The first step in understanding what is going on inside a computer vision model is to comprehend how computer interact with images. This chapter tries to explain the foundation of computer vision conducting some experimentations on the very popular data set MNIST, which contains images of handwritten digits collected by the National Institute of Standards and Technology by *Yann Lecun* and his Colleagues. Therefore, we need to download the sample dataset, but before that we should know how install the `fastbook` contents, and how to import `fastai` library.
+This chapter covers all aspects of the deep learning application in image classification, such as the various types of layers, regularization methods, optimizers, how to combine layers into architecture, labeling techniques, and so on. It addresses the problem of determining what breed of pet is depicted in each image in the dataset, which indicates a multi-category target.
 
+##Labeling Data
+This section attempts to find out how the breed name of each pet can be extracted from each image. There are two common ways of providing data as:
+*   Data items are provided in files located in seperate folders or with filenames representing information about those items.
+*   Data items that may include filenames are organized into the rows in a table, e.g., in CSV format, as well as a link to associated data in other formats such as images.
+
+Underneath, we firstly browse the contents of the data folder and then offer a way to extract the label from filename:
 ```python
 # installing fastbook contents and import it
 !pip install -Uqq fastbook
