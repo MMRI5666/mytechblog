@@ -49,4 +49,5 @@ path.ls()
  100.00% [811712512/811706944 00:17<00:00]
 (#2) [Path('/root/.fastai/data/oxford-iiit-pet/annotations'),Path('/root/.fastai/data/oxford-iiit-pet/images')]
 
+The *annotations* directory contains information about where the pets are, which is not our concern. Therefore, we have to dig into the *images* directory.
 
