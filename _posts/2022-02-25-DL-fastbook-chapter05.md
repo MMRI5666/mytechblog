@@ -91,4 +91,5 @@ Presizing strategy performs the two steps shown by   , as described below:
 
 Figure ..., shows a comparison of fastai's data augmentation strategy (left) and the traditional  approach (right).
 
-  
+## Checking and Debugging a DataBlock
+You can verify the dataset by using the follwoing two code scripts:
