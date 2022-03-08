@@ -105,3 +105,17 @@ pets.summary(path/'images')
 The method `summary` of the `DataBlock` object shows detail description about the status of the data inside, as well as any warning. To see an example of that refer to the page 192 of the the book.
 
 Now, let's learn the model:
+```python
+learn = cnn_learner(dls, resnet34, metrics=error_rate)
+learn.fine_tune(3)
+```
+     Downloading: "https://download.pytorch.org/models/resnet34-b627a593.pth" to /root/.cache/torch/hub/checkpoints/resnet34-b627a593.pth
+     100%
+     83.3M/83.3M [00:03<00:00, 53.7MB/s]
+     epoch	train_loss	valid_loss	error_rate	time
+     0	1.478976	0.342973	0.108254	01:19
+     epoch	train_loss	valid_loss	error_rate	time
+     0	0.479528	0.331214	0.106901	01:21
+     1	0.363403	0.241632	0.086604	01:25
+     2	0.215266	0.191870	0.066982	01:23
+
