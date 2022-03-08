@@ -193,7 +193,7 @@ Mathematically, the <strong>logarithm</strong> function is:
 &emsp;&emsp; a = log(y, b)             assuming that log(y, b) returns *log y base b.
 In Python, log uses the special number e(2.718...) as the base.</pre>
 
->><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 The following equation is a one of teh key mathematical expression in deep learning:
 &emsp;&emsp; log(a * b) = log(a) + log(b)</pre>
 
