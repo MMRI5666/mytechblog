@@ -137,3 +137,8 @@ len(y), y
      (64,
       TensorCategory([35, 10, 32,  2, 35, 35, 22, 18, 17, 24, 28, 36, 26,  8, 31, 16, 30, 23, 30, 22, 25, 23, 17, 25, 29,  3, 16,  4, 24, 11, 33, 11, 18,  3, 15, 22,  1, 32,  1, 18, 17, 22,  2, 32, 11,  3,  4, 14,
                1, 24, 32, 17,  5, 19,  5, 35, 34, 31, 23, 12,  6, 18, 36,  9], device='cuda:0'))
+
+The batch size is 64, i.e., it has 64 rows, each row contains a single integer between 0 and 36 that represent 37 possible pet breeds. The predictions, i.e., activations of the final layer of the neural network, can be retrieved using the method `Learner.get_preds`. This function takes either a dataset index (0 for train and 1 for valid) or an iterator of batches as the parameter. So, we simply pass a list of our sample batch to receive the predictions. We can expect it to return the predictions along with targets as shown below:
+
+`preds, targets = learn.get_preds(dl=[(x, y)])`
+But since we already have the targets, we can ignore it by assign it to a special variable _:
