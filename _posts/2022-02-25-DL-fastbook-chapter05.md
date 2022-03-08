@@ -34,6 +34,5 @@ import pandas as pd
 ```
 
 In a computer, everything is represented as a number, therefore, to view the numbers that make up this image, we have to convert it to a `NumPy` array or `PyTorch` tensor. The following contents introduce some tricks in working with these two data structures, but if you want to know more about them you can refer to the following links:
-
 - [NumPy arrays](https://numpy.org/doc/stable/reference/generated/numpy.array.html)
 - [PyTorch tensors](https://pytorch.org/docs/stable/tensors.html)
