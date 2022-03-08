@@ -98,3 +98,10 @@ dls.show_batch(nrows=2, ncols=2)
 ```
 
 ![image_01](/mytechblog/images/2022-02-25-DL-fastbook-chapter05/image_01.png)
+
+```python
+pets.summary(path/'images')
+```
+The method `summary` of the `DataBlock` object shows detail description about the status of the data inside, as well as any warning. To see an example of that refer to the page 192 of the the book.
+
+Now, let's learn the model:
