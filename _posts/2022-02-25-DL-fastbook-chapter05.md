@@ -145,3 +145,9 @@ preds, targets = learn.get_preds(dl=[(x, y)])
 ```
 
 But since we already have the targets, we can ignore it by assign it to a special variable _:
+
+
+
+><pre style='white-space: pre-wrap;'>
+In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.
+</pre>
