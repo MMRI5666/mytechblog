@@ -152,6 +152,8 @@ preds[0]
      TensorBase([7.3856e-09, 6.4286e-11, 1.2409e-09, 2.7335e-11, 4.6427e-09, 8.0484e-09, 2.9370e-09, 1.5099e-08, 5.6245e-09, 1.2676e-08, 9.6034e-10, 5.8992e-09, 1.8227e-09, 2.5063e-10, 3.5726e-10, 2.9001e-10,
         6.3725e-09, 1.6889e-10, 1.5992e-10, 1.5381e-10, 4.3895e-10, 3.6065e-10, 9.9710e-08, 2.9064e-10, 7.2608e-11, 2.6796e-09, 4.1463e-11, 5.0358e-10, 2.8368e-10, 2.2414e-10, 3.2216e-10, 2.4286e-09,
         3.3916e-06, 9.0170e-09, 2.1684e-10, 1.0000e+00, 7.1604e-09])
+        
+In fact, the actual predictions are 37 probabilities between 0 and 1, which sum up to 1 in total:
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.</pre>
