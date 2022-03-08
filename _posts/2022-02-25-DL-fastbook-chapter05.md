@@ -56,3 +56,39 @@ The *annotations* directory contains information about where the pets are, which
 ```
      (#7393) [Path('/root/.fastai/data/oxford-iiit-pet/images/basset_hound_96.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Abyssinian_116.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/shiba_inu_35.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/basset_hound_115.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/shiba_inu_191.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_2.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/miniature_pinscher_141.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/english_cocker_spaniel_176.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/leonberger_111.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/newfoundland_60.jpg')...]
      
+As we can see, the file names include pets breeds' name, and we, hence, are able extract them using *regex* as shown below:
+```python
+# example of how to extract the pet breed name from file name
+fname = (path/'images').ls()[0]
+re.findall(r'(.+)_\d+.jpg$', fname.name)
+```
+     ['basset_hound']
+     
+Now that we know the location of the data and found the way to extract the label, we use the a special API offered by fastai, named `DataBlock` to construct the data block. The labels can be passed to this API using the class `RegexLabeller`.
+```python
+pets = DataBlock(blocks = (ImageBlock, CategoryBlock),
+                 get_items = get_image_files,
+                 splitter = RandomSplitter(seed=41),
+                 get_y = using_attr(RegexLabeller(r'(.+)_\d+.jpg$'), 'name'),
+                 item_tfms=Resize(460),
+                 batch_tfms=aug_transforms(size=224, min_scale=0.75))
+dls = pets.dataloaders(path/'images')
+```
+Two of the most important parameters used to construct the data block above are as:
+*   `item_tfms=Resize(460)', and 
+*   `batch_tfms=transforms(size=224, min_scale=0.75),
+which lead to next important topic that is Presizing.
+
+## Presizing
+*Presizing* is an image augmentation strategy offered by `fastai`, which aims to minimize data destruction while maintaining good performance.<br>
+Presizing adopts two strategies:
+1.   Resize images to relatively "large" dimensions
+2.   Compose all of the common augmentation operations (including a resize to the fianl target size) into one, and perform them on the GPU only once at the end of processing.
+
+Presizing strategy performs the two steps shown by   , as described below:
+1.   *Crop full width or height*: is in `item_tfms` and applied individually to each image before being copied to GPU. While the crop area on the training set is randomly taken out, the center square of the image is chosen on the validation set.
+2.   *Random crop and augment*: is in `batch_tfms`, and applied to a batch all at once on the GPU. On the training set, the random crop and any other augmentations are done first. Whereas, the resize to the final size needed for the model is done on the validation set.
+
+Figure ..., shows a comparison of fastai's data augmentation strategy (left) and the traditional  approach (right).
+
+  
