@@ -129,3 +129,11 @@ To unlock cross-entropy loss functionality, we need to know more about actual da
 
 ## Viewing Activations and Labels
 To look at the activations layer of the model, let's select one batch of real data from the `DataLoader`: 
+
+```python
+x, y = dls.one_batch()
+len(y), y
+```
+     (64,
+      TensorCategory([35, 10, 32,  2, 35, 35, 22, 18, 17, 24, 28, 36, 26,  8, 31, 16, 30, 23, 30, 22, 25, 23, 17, 25, 29,  3, 16,  4, 24, 11, 33, 11, 18,  3, 15, 22,  1, 32,  1, 18, 17, 22,  2, 32, 11,  3,  4, 14,
+               1, 24, 32, 17,  5, 19,  5, 35, 34, 31, 23, 12,  6, 18, 36,  9], device='cuda:0'))
