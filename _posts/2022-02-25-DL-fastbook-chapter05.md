@@ -140,5 +140,8 @@ len(y), y
 
 The batch size is 64, i.e., it has 64 rows, each row contains a single integer between 0 and 36 that represent 37 possible pet breeds. The predictions, i.e., activations of the final layer of the neural network, can be retrieved using the method `Learner.get_preds`. This function takes either a dataset index (0 for train and 1 for valid) or an iterator of batches as the parameter. So, we simply pass a list of our sample batch to receive the predictions. We can expect it to return the predictions along with targets as shown below:
 
-`preds, targets = learn.get_preds(dl=[(x, y)])`
+```python
+preds, targets = learn.get_preds(dl=[(x, y)])
+```
+
 But since we already have the targets, we can ignore it by assign it to a special variable _:
