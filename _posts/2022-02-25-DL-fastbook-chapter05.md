@@ -119,3 +119,13 @@ learn.fine_tune(3)
      1	0.363403	0.241632	0.086604	01:25
      2	0.215266	0.191870	0.066982	01:23
 
+Surprisingly, the table above provides some values for training and validation loss. As we remember, the loss is the result of evaluating loss function, which we determine in the model to optimize the parameters. Even though no loss function has been provided, how has FastAI calculated the loss for training and validation? In fact, depending on the type of data and the model, *fastai* chooses an appropriate loss function. In this cast of image classification, which uses image data and produces a categorical outcome, *fastai, by default, selects *cross-entropy loss*.
+
+## Cross-Entropy Loss
+A cross-entropy loss is similar to the loss function, which was developed using a sigmoid function, but has two privileges over it:
+1.   It works effectively with models that have multi-categorical dependent variable.
+2.   Leads to faster and more reliable training.
+To unlock cross-entropy loss functionality, we need to know more about actual data (lables) and activations.
+
+## Viewing Activations and Labels
+To look at the activations layer of the model, let's select one batch of real data from the `DataLoader`: 
