@@ -162,7 +162,10 @@ Behind the scene, an activation function called *softmax* is used to transform t
 
 ## Softmax
 Softmax, similar to sigmoid function, is applied to final layer of trained model with multi-categorical dependent variable to ensure that the activations are all between 0 and 1, and that they sum to 1.
-
+```python
+def softmax(x):
+  return exp(x) / exp(x).sum(dim=1, keepdim=True)
+```
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.</pre>
