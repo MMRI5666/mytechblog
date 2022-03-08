@@ -173,7 +173,8 @@ sm_acts = torch.softmax(acts, dim=1)
 sm_acts
 ```
 Some other functions could be developed that can produce activations between 0 and 1, and sum to 1, however, no other function can behave smoothly and symmetrically in similar ways to sigmoid as softmax does. Additionally, the softmax integrated collaborates with the loss function.<br>
-> In applying *softmax* if one of an existed number in the activations is slightly bigger than the others, applying the exponential amplify that, resulting being closer to 1 in softmax outcome. Therefore, increasing the activation of the correct column as much as possible entails reducing the activation of the other columns.
+>><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
+In applying *softmax* if one of an existed number in the activations is slightly bigger than the others, applying the exponential amplify that, resulting being closer to 1 in softmax outcome. Therefore, increasing the activation of the correct column as much as possible entails reducing the activation of the other columns.</pr>
 
 In PyTorch, you can find a function called *nll_loss*, which does the same thing as *sm_acts[range(n), targ], except that it takes negative values. Possibly you are wondering why this function needs to accept negatives! This is because when applying a logarithm, we may get negative values. However, the next question would be why we need to take the logarithm.
 ```python
@@ -186,16 +187,15 @@ F.nll_loss(sm_acts, targ, reduction='none')
 
 <strong>Why taking the logarithm is useful?</strong><br>
 Although the loss function, which was developed in the previous section appears to work quite well, it has a major drawback. When using probabilities, which are varying exclusively between 0 and 1, the model will not care whether it predicts 0.99 or 0.999. In fact, these numbers are so close to each other, however in another sense, 0.999 is ten times more confident than 0.99. Transforming the numbers between 0 and 1 to instead be between negative infinity and infinity seems to alleviate effectively this deficiency. The mathematical function, i.e., *logarithm*, which is available in PyTorch as `torch.log`, can take care of this transformation. 
-><pre>
+>><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 Mathematically, the <strong>logarithm</strong> function is:
 &emsp;&emsp; y = b ** a
 &emsp;&emsp; a = log(y, b)             assuming that log(y, b) returns *log y base b.
 In Python, log uses the special number e(2.718...) as the base.</pre>
 
-><pre>
+>><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 The following equation is a one of teh key mathematical expression in deep learning:
-&emsp;&emsp; log(a * b) = log(a) + log(b)
-</pre>
+&emsp;&emsp; log(a * b) = log(a) + log(b)</pre>
 
 The importance of the equation mentioned above is unveiled when we note that while the underlying signal increases exponentially, the logarithms increase linearly. Computer scientists are very interested in using this concept to replace arithmetic operations that produce extremely large and extremely small numbers with operations that are much easier for computers to handle in terms of both computation and memory loads.<br>
 Now, we know that why we use logarithms in deep learning and how taking the mean of the positive or negative log of the probabilities (depending on whether it's the correct or <em>incorrect</em> class) returns the *negative log likelihood loss*.
