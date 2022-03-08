@@ -94,4 +94,4 @@ Figure ..., shows a comparison of fastai's data augmentation strategy (left) and
 ## Checking and Debugging a DataBlock
 You can verify the dataset by using the follwoing two code scripts:
 
-![image_01](/mytechblog/images/2022-02-25-DL-fastbook-chapter05/image_01.png "")
+![image_01](/mytechblog/images/2022-02-25-DL-fastbook-chapter05/image_01.png)
