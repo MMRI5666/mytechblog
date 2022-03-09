@@ -173,7 +173,7 @@ sm_acts = torch.softmax(acts, dim=1)
 sm_acts
 ```
 Some other functions could be developed that can produce activations between 0 and 1, and sum to 1, however, no other function can behave smoothly and symmetrically in similar ways to sigmoid as softmax does. Additionally, the softmax integrated collaborates with the loss function.<br>
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E6; border-color: #CCCCCC; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E5; border-color: #CCCCCC; color: #404040'>
 <b>Important</b><br>In applying <em>softmax</em>, if one of an existed number in the activations is slightly bigger than the others, applying the exponential amplify that, resulting being closer to 1 in softmax outcome. Therefore, increasing the activation of the correct column as much as possible entails reducing the activation of the other columns.</pre>
 
 In PyTorch, you can find a function called *nll_loss*, which does the same thing as *sm_acts[range(n), targ], except that it takes negative values. Possibly you are wondering why this function needs to accept negatives! This is because when applying a logarithm, we may get negative values. However, the next question would be why we need to take the logarithm.
@@ -193,7 +193,7 @@ Although the loss function, which was developed in the previous section appears 
 &emsp;&emsp; a = log(y, b)             assuming that log(y, b) returns *log y base b.
 In Python, log uses the special number e(2.718...) as the base.</pre>
 
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E6; border-color: #CCCCCC; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E5; border-color: #CCCCCC; color: #404040'>
 <b>Important</b><br>The following equation is a one of teh key mathematical expression in deep learning:
 &emsp;&emsp; log(a * b) = log(a) + log(b)</pre>
 
