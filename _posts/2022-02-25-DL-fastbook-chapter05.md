@@ -173,7 +173,7 @@ sm_acts = torch.softmax(acts, dim=1)
 sm_acts
 ```
 Some other functions could be developed that can produce activations between 0 and 1, and sum to 1, however, no other function can behave smoothly and symmetrically in similar ways to sigmoid as softmax does. Additionally, the softmax integrated collaborates with the loss function.<br>
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #CCFFCC; border-bottom-color: #CCFFCC; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #E6F2FF; border-bottom-color: #E6F2FF; color: #404040'>
 <b>Important</b><br>In applying <em>softmax</em>, if one of an existed number in the activations is slightly bigger than the others, applying the exponential amplify that, resulting being closer to 1 in softmax outcome. Therefore, increasing the activation of the correct column as much as possible entails reducing the activation of the other columns.</pre>
 
 In PyTorch, you can find a function called *nll_loss*, which does the same thing as *sm_acts[range(n), targ], except that it takes negative values. Possibly you are wondering why this function needs to accept negatives! This is because when applying a logarithm, we may get negative values. However, the next question would be why we need to take the logarithm.
