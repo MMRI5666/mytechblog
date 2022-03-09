@@ -194,7 +194,7 @@ Although the loss function, which was developed in the previous section appears 
 In Python, log uses the special number e(2.718...) as the base.</pre>
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E5; border-color: #CCCCCC; color: #404040'>
-<b>Important</b><br>The following equation is a one of teh key mathematical expression in deep learning:
+<b>IMPORTANT</b><br>The following equation is a one of teh key mathematical expression in deep learning:
 &emsp;&emsp; log(a * b) = log(a) + log(b)</pre>
 
 The importance of the equation mentioned above is unveiled when we note that while the underlying signal increases exponentially, the logarithms increase linearly. Computer scientists are very interested in using this concept to replace arithmetic operations that produce extremely large and extremely small numbers with operations that are much easier for computers to handle in terms of both computation and memory loads.<br>
@@ -203,8 +203,9 @@ Now, we know that why we use logarithms in deep learning and how taking the mean
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.</pre>
 
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #E6EEFE; border-color: #CCCCCC; color: #404040'>
-<b>Note</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em><br></pre>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F4; border-color: #CCCCCC; color: #404040'>
+<b>DEFINITION</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em>
+&emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</pre>
 
 
 
