@@ -67,11 +67,11 @@ re.findall(r'(.+)_\d+.jpg$', fname.name)
 Now that we know the location of the data and found the way to extract the label, we use the a special API offered by fastai, named `DataBlock` to construct the data block. The labels can be passed to this API using the class `RegexLabeller`.
 ```python
 pets = DataBlock(blocks = (ImageBlock, CategoryBlock),
-                 get_items = get_image_files,
-                 splitter = RandomSplitter(seed=41),
-                 get_y = using_attr(RegexLabeller(r'(.+)_\d+.jpg$'), 'name'),
-                 item_tfms=Resize(460),
-                 batch_tfms=aug_transforms(size=224, min_scale=0.75))
+            get_items = get_image_files,
+            splitter = RandomSplitter(seed=41),
+            get_y = using_attr(RegexLabeller(r'(.+)_\d+.jpg$'), 'name'),
+            item_tfms=Resize(460),
+            batch_tfms=aug_transforms(size=224, min_scale=0.75))
 dls = pets.dataloaders(path/'images')
 ```
 Two of the most important parameters used to construct the data block above are as:
