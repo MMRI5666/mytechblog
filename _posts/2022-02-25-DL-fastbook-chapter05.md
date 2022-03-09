@@ -194,7 +194,7 @@ Mathematically, the <strong>logarithm</strong> function is:
 In Python, log uses the special number e(2.718...) as the base.</pre>
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
-The following equation is a one of teh key mathematical expression in deep learning:
+<b>Important</b><br>The following equation is a one of teh key mathematical expression in deep learning:
 &emsp;&emsp; log(a * b) = log(a) + log(b)</pre>
 
 The importance of the equation mentioned above is unveiled when we note that while the underlying signal increases exponentially, the logarithms increase linearly. Computer scientists are very interested in using this concept to replace arithmetic operations that produce extremely large and extremely small numbers with operations that are much easier for computers to handle in terms of both computation and memory loads.<br>
