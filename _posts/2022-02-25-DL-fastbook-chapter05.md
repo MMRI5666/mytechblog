@@ -187,7 +187,7 @@ F.nll_loss(sm_acts, targ, reduction='none')
 
 <strong>Why taking the logarithm is useful?</strong><br>
 Although the loss function, which was developed in the previous section appears to work quite well, it has a major drawback. When using probabilities, which are varying exclusively between 0 and 1, the model will not care whether it predicts 0.99 or 0.999. In fact, these numbers are so close to each other, however in another sense, 0.999 is ten times more confident than 0.99. Transforming the numbers between 0 and 1 to instead be between negative infinity and infinity seems to alleviate effectively this deficiency. The mathematical function, i.e., *logarithm*, which is available in PyTorch as `torch.log`, can take care of this transformation. 
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #E6EEFF; border-color: #CCCCCC; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #E6EEFE; border-color: #CCCCCC; color: #404040'>
 <b>Note</b><br>Mathematically, the <strong>logarithm</strong> function is:
 &emsp;&emsp; y = b ** a
 &emsp;&emsp; a = log(y, b)             assuming that log(y, b) returns *log y base b.
@@ -202,6 +202,11 @@ Now, we know that why we use logarithms in deep learning and how taking the mean
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.</pre>
+
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #E6EEFE; border-color: #CCCCCC; color: #404040'>
+<b>Note</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em><br></pre>
+
+
 
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F4; border-color: #CCCCCC; color: #404040'>
