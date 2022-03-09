@@ -205,12 +205,6 @@ In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that 
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F4; border-color: #CCCCCC; color: #404040'>
 <b>DEFINITION</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em>
-&emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</pre>
+&emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</b></pre>
 
-
-
-
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F4; border-color: #CCCCCC; color: #404040'>
-<b>Definition</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em><br>
-&emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</b><pre>
 
