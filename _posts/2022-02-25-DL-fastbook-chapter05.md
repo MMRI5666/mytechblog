@@ -203,7 +203,7 @@ Now, we know that why we use logarithms in deep learning and how taking the mean
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F2F2F2; border-bottom-color: #F2F2F2; color: #404040'>
 In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that the log of <em>softmax</em> ouput was already taken. TyTorch has another function called <em>log_softmax</em> that combines log and softmax in a fast and accurate way, and <em>nll_loss</em> is designed to be used after log_softmax.</pre>
 
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F5; border-color: #CCCCCC; color: #404040'>
+><pre  style='font-style: normal; white-space: pre-wrap; background-color: #F0F5F6; border-color: #CCCCCC; color: #404040'>
 <b>DEFINITION</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em>
 &emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</b></pre>
 
