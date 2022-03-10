@@ -207,4 +207,16 @@ In PyTorch, <em>nll_loss</em> does not take logarithm, however, it assumes that 
 <b>DEFINITION</b><br>The composition of applying softmax, and then taking the log likelihood of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em>
 &emsp;&emsp;&emsp;<b>loss_func = nn.CrossEntropyLoss()</b></pre>
 
+nn.CrossEntropyLoss is a class and instantiating it returns an object that behaves like a function, as:
+```python
+loss_func(acts, targ)
+```
+
+However, PyTorch provides a plain functional form, like all other loss functions, in F namespace (using the class form is recommended by PyTorch):
+```python
+F.cross_entropy(acts, targ)
+```
+
+PyTorch loss functions, by default, take the mean of the loss of the items, which you can disable this feature by passing `reduction='none'` to them.
+
 
