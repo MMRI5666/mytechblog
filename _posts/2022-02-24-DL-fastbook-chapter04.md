@@ -296,7 +296,7 @@ xt.grad
 
 As we see, it return the value of the derivative of the quadratic function x ** 2, which is 2 * x.
 
-{% include alert.html text="<strong>Don't forget</strong>:
+{% include warning.html text="<strong>Don't forget</strong>:
 <br>When calling grad, PyTorch exhausts the gradient function, and reusing it will cause an error. So, in prior to reusing grad the the function f(xt) must be re-calculated, i.e., yt = f(xt)." %}<br>
 
 >The *"backward"* here refers to backpropagation, which the name given to the process of calculating the derivative of each layer. This is called backward pass of the network, as opposed to forward pass, which is where the activation are calculated.
