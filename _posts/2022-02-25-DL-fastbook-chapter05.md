@@ -193,10 +193,9 @@ Although the loss function, which was developed in the previous section appears 
 &emsp; a = log(y, b);&emsp;  assuming that log(y, b) returns <em>log y base b</em>.<br>
      In Python, <em>log</em> uses the special number e(2.718...) as the base." %}
 
+{% include important.html text="The following equation is a one of teh key mathematical expression in deep learning:
+&emsp;&emsp; <b>log(a * b) = log(a) + log(b)" %}
 
-><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E5; border-color: #CCCCCC; color: #404040'>
-<b>IMPORTANT</b><br>The following equation is a one of teh key mathematical expression in deep learning:
-&emsp;&emsp; <b>log(a * b) = log(a) + log(b)</b></pre>
 
 The importance of the equation mentioned above is unveiled when we note that while the underlying signal increases exponentially, the logarithms increase linearly. Computer scientists are very interested in using this concept to replace arithmetic operations that produce extremely large and extremely small numbers with operations that are much easier for computers to handle in terms of both computation and memory loads.<br>
 Now, we know that why we use logarithms in deep learning and how taking the mean of the positive or negative log of the probabilities (depending on whether it's the correct or <em>incorrect</em> class) returns the *negative log likelihood loss*.
