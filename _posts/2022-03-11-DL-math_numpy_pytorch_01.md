@@ -30,6 +30,6 @@ For the application of DL in computer vision, the main problem is how computers 
 ![image_transforming_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/image_transforming_01.png 
   "Figure-3, image transformation.")
 
-
+Figure-4 shows that how a colored image is strored in a tensor, which here is a 3D tensor and basically functions like a stacked matrices, through color channels including red, blue and green channels. To have a realistic perspective from how image processing and deep learning in computer vision is complicated, you need just think of the fact that 
 ![colored_image_transforming_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/colored_image_transforming_01.png 
-  "Figure-3, colored image transformation.")
+  "Figure-4, colored image transformation.")
