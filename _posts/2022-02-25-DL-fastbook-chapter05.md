@@ -193,7 +193,7 @@ Although the loss function, which was developed in the previous section appears 
 &emsp; a = log(y, b);&emsp;  assuming that log(y, b) returns <em>log y base b</em>.<br>
      In Python, <em>log</em> uses the special number e(2.718...) as the base." %}
 
-{% include important.html text="The following equation is a one of the key mathematical expression in deep learning:
+{% include important.html text="The following equation is a one of the key mathematical expression in deep learning:<br>
 &emsp; <b>log(a * b) = log(a) + log(b)</b>" %}
 
 
