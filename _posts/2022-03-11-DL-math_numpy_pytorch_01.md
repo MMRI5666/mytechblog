@@ -19,4 +19,8 @@ Figure-1 shows some linear algebra terminilogies that are very commonly used in 
 <b>tensor</b>: In mathematics, a <em>tensor</em> is an algebraic object that describes a multilinear relationship between sets of algebraic objects related to a vector space.
 " %}
 
+Figure-2 shows a Euclidean vector, which its coordinates x and y are scalars, but v is a vector that defined by scalars x and y.
+![Vector_components.svg.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/Vector_components.svg.png 
+  "Figure-2, Euclidian vector defined by scalars x and y.")
+
 
