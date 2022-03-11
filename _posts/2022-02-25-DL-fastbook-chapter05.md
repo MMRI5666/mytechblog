@@ -190,7 +190,7 @@ Although the loss function, which was developed in the previous section appears 
 
 {% include note.html text="Mathematically, the <strong>logarithm</strong> function is:<br>
 &emsp;&emsp; y = b ** a<br>
-&emsp;&emsp; a = log(y, b);&emsp;  assuming that log(y, b) returns <em>log y base b,/em>.<br>
+&emsp;&emsp; a = log(y, b);&emsp;  assuming that log(y, b) returns <em>log y base b</em>.<br>
      In Python, <em>log</em> uses the special number e(2.718...) as the base." %}
 
 
