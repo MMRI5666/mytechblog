@@ -31,3 +31,5 @@ For the application of DL in computer vision, the main problem is how computers 
   "Figure-3, image transformation.")
 
 
+![colored_image_transforming_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/colored_image_transforming_01.png 
+  "Figure-3, colored image transformation.")
