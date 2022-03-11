@@ -25,6 +25,6 @@ Figure-2 shows a Euclidean vector, which its coordinates x and y are scalars, bu
   "Figure-2, Euclidian vector defined by scalars x and y.")
   
 ## Storing Images on Computers
-In order to make the images interpretable by a computer, they should be represented through a collection of digits, which are stored in a data structure. A grayscale image can be stored in a matrix of digits, each element of the matrix representing a pixel. A pixel has an integer value between 0 and 255, i.e., 0 corresponds to black, and 255 corresponds to white. The color value in grayscale images represents its brightness.
+For the application of DL in computer vision, the main problem is how computers interpret images. In order to accomplish this, an image must be represented by digits that are stored in an easy-to-manage data structure for computers. The key to solving this problem is using matrices and tensors. A grayscale image can be stored in a matrix of digits, each element of the matrix representing a pixel. A pixel has an integer value between 0 and 255, i.e., 0 corresponds to black, and 255 corresponds to white. The color value in grayscale images represents its brightness. The more data points in the matrix, the more detailed the image will be (higher resolution image).
 
 
