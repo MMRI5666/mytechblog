@@ -192,7 +192,7 @@ Although the loss function, which was developed in the previous section appears 
 Mathematically, the <strong>logarithm</strong> function is:
 &emsp;&emsp; y = b ** a
 &emsp;&emsp; a = log(y, b)             assuming that log(y, b) returns *log y base b*.
-In Python, log uses the special number e(2.718...) as the base.}
+In Python, log uses the special number e(2.718...) as the base." %}
 
 
 ><pre  style='font-style: normal; white-space: pre-wrap; background-color: #FFF5E5; border-color: #CCCCCC; color: #404040'>
