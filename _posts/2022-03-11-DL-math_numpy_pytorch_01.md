@@ -34,7 +34,7 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 ![colored_image_transforming_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/colored_image_transforming_01.png 
   "Figure-4, colored image transformation.")
   
-
+## Data Types
 <table>
   <tr>
     <th>Object</th>
