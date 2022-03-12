@@ -51,12 +51,16 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
   </tr>
   <tr>
     <td>NumPy</td>
-    <td>Matrix</td>
-    <td>Mexico</td>
+    <td>Array</td>
+    <td>Array</td>
+    <td>ND array</td>
+    <td>ND array</td>
   </tr>
     <tr>
+    <td>PyTorch</td>
     <td>Tensor</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>Tensor</td>
+    <td>Tensor</td>
+    <td>Tensor</td>
   </tr>
 </table>
