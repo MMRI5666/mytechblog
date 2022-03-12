@@ -119,14 +119,14 @@ The following codes show how to use NumPy and PyTorch to transpose:
   
 ```python
 # create a matrix
-nmx = np.array(ls)
+mx = np.array(ls)
 # transpose the matrix
-nmxT = nmx.T
-print(nmxT)
+mxT = mx.T
+print(mxT)
 
 # transpose the transpose
-nmxTT = nmxT.T
-print(nmxTT)
+mxTT = mxT.T
+print(mxTT)
 ```
     [[1 5]
     [2 6]
@@ -136,3 +136,27 @@ print(nmxTT)
     [5 6 7 8]]
 
 *   In PyTorch:
+
+```python
+# create a tensor
+tns = torch.tensor(ls)
+print(tns)
+
+# transpose the tensor
+tnsT = tns.T
+print(tnsT)
+
+# transpose the transpose
+tnsTT = tnsT.T
+print(tnsTT)
+```
+    tensor([[1, 2, 3, 4],
+          [5, 6, 7, 8]])
+    tensor([[1, 5],
+          [2, 6],
+          [3, 7],
+          [4, 8]])
+    tensor([[1, 2, 3, 4],
+          [5, 6, 7, 8]])
+          
+
