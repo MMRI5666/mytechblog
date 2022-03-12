@@ -164,10 +164,15 @@ print(tnsTT)
   and <em>torch.transpose()</em>, but the forms 
   <em>narray.T</em> and <em>tensor.T</em> are more commonly used" %}
 
-<pre class="output_area">
+<p class="output_area">
   sdsdfsfsdfsdfsdfsdfsdfgasdfgsdfgsdfgsdfgdasfg
-</pre>
+</p>
 
-<pre class="input_area">
+<div class="input_area">
   sdsdfsfsdfsdfsdfsdfsdfgasdfgsdfgsdfgsdfgdasfg
-</pre>
+</div>
+
+<span class="input_area">
+  sdsdfsfsdfsdfsdfsdfsdfgasdfgsdfgsdfgsdfgdasfg
+</span>
+
