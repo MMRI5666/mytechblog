@@ -36,8 +36,8 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 
 <br>
 ## Data Types
-<table style="border-color: bcbca9;">
-  <tr>
+<table>
+  <tr style="border-color: bcbca9;">
     <th style="background-color:#ddddd3; border-color: 2b2b21;">Object</th>
     <th style="background-color:#ddddd3; border-color: 2b2b21;"><b>7</b></th>
     <th style="background-color:#ddddd3; border-color: 2b2b21;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/vector.png" alt="vector.png"></th>
