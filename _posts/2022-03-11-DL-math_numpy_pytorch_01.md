@@ -114,7 +114,7 @@ The following codes show how to use NumPy and PyTorch to transpose:
   ls = [ [1, 2, 3, 4], [5, 6, 7, 8]]
   ls
 ```
-  [[1, 2, 3, 4], [5, 6, 7, 8]]
+    [[1, 2, 3, 4], [5, 6, 7, 8]]
   
 ```python
 # create a matrix
