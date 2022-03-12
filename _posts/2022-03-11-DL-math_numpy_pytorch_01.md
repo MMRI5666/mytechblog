@@ -167,3 +167,7 @@ print(tnsTT)
 <pre class="output_area">
   sdsdfsfsdfsdfsdfsdfsdfgasdfgsdfgsdfgsdfgdasfg
 </pre>
+
+<pre class="input_area">
+  sdsdfsfsdfsdfsdfsdfsdfgasdfgsdfgsdfgsdfgdasfg
+</pre>
