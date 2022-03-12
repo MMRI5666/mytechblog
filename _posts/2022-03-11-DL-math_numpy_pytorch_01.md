@@ -69,4 +69,8 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 
 
 ## Converting Reality to Numbers
-
+There are two type main types of reality:
+<ul>
+  <li>Continuous</li><p>Continuous reality is in form of numeric </p>
+  <li>Categorical</li>
+</ul>
