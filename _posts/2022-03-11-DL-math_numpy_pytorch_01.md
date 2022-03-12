@@ -39,21 +39,21 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
   <tr>
     <th>Objects</th>
     <th></th>
-    <th></th>
+    <th>Scalar</th>
     <th></th>
   </tr>
   <tr>
     <td>Math</td>
-    <td>Maria Anders</td>
+    <td>Vector</td>
     <td>Germany</td>
   </tr>
   <tr>
     <td>NumPy</td>
-    <td>Francisco Chang</td>
+    <td>Matrix</td>
     <td>Mexico</td>
   </tr>
     <tr>
-    <td>PyTorch</td>
+    <td>Tensor</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
