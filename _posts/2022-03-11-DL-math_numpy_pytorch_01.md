@@ -86,6 +86,9 @@ There are two type main types of reality:
         </p>
       </li>
       <li><b>One-hot encoding</b>
+        <p>
+           The functionality of this approach is basically similar to <em>Dummy-coding</em>, but applies to multi-categorical values and creates a matrix, rather than a vector, to wrap up the assigned labels. 
+        </p>
       </li>
 
     </ul>
