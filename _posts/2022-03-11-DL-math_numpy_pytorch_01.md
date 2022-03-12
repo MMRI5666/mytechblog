@@ -107,15 +107,9 @@ The codes, underneath, show how to transpose in NumPy and PyTorch:
   # import libraries<br>
   import numpy as np<br>
   import torch<br>
+  
+  
+  ls = [ [1, 2, 3, 4], [5, 6, 7, 8]]
+  ls
 ```
-
-ls = [ [1, 2, 3, 4], [5, 6, 7, 8]]
-ls
-'''
   [[1, 2, 3, 4], [5, 6, 7, 8]]
-<ul>
-  <li>
-    Transposing in NumPy:
-    
-  </li>
-</ul>
