@@ -38,11 +38,11 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 ## Data Types
 <table>
   <tr>
-    <th style="background-color:#D9D9D7;">Object</th>
-    <th style="background-color:#D9D9D7;"><b>7</b></th>
-    <th style="background-color:#D9D9D5;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/vector.png" alt="vector.png"></th>
-    <th style="background-color:#D9D9D5;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/matrix.png" alt="matrix.png"></th>
-    <th style="background-color:#D9D9D7;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/tensor.png" alt="tensor.png"></th>
+    <th style="background-color:#ddddd3;">Object</th>
+    <th style="background-color:#ddddd3;"><b>7</b></th>
+    <th style="background-color:#ddddd3;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/vector.png" alt="vector.png"></th>
+    <th style="background-color:#ddddd3;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/matrix.png" alt="matrix.png"></th>
+    <th style="background-color:#ddddd3;"><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/tensor.png" alt="tensor.png"></th>
   </tr>
   <tr>
     <td>Math</td>
