@@ -40,8 +40,7 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
     <th>Object</th>
     <th>
     </th>
-    <th>![vector.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/vector.png)
-    </th>
+    <th><img src="/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/vector.png" alt="vector.png"></th>
     <th></th>
   </tr>
   <tr>
