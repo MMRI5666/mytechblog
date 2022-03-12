@@ -108,8 +108,27 @@ The codes, underneath, show how to transpose in NumPy and PyTorch:
   import numpy as np<br>
   import torch<br>
   
-  
   ls = [ [1, 2, 3, 4], [5, 6, 7, 8]]
   ls
 ```
   [[1, 2, 3, 4], [5, 6, 7, 8]]
+  
+```python
+# create a matrix
+nmx = np.array(ls)
+# transpose the matrix
+nmxT = nmx.T
+print(nmxT)
+
+# transpose the transpose
+nmxTT = nmxT.T
+print(nmxTT)
+```
+  [[1 5]
+ [2 6]
+ [3 7]
+ [4 8]]
+[[1 2 3 4]
+ [5 6 7 8]]
+ 
+ 
