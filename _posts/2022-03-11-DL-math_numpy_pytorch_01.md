@@ -105,10 +105,9 @@ In linear algebra and deep learning, transposing is one of the most commonly use
 <div>The codes, underneath, show how to transpose in NumPy and PyTorch:
   <pre class="language-python">
     <code class="language-python">
-      # import libraries
+      # import libraries</code>
       import numpy as np
       import torch
-    </code>
   </pre>
 
 ls = [ [1, 2, 3, 4], [5, 6, 7, 8]]
