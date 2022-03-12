@@ -78,3 +78,5 @@ There are two type main types of reality:
     and can contain limited and specific distinct values, such as pet types 
     (cat or dog), and disease diagnosis (true or false).
 </ul>
+
+    
