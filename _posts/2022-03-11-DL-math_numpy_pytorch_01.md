@@ -37,15 +37,17 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 
 <table>
   <tr>
-    <th>Objects</th>
+    <th>Object</th>
     <th></th>
     <th>Scalar</th>
     <th></th>
   </tr>
   <tr>
     <td>Math</td>
+    <td>Scalar</td>
     <td>Vector</td>
-    <td>Germany</td>
+    <td>Matrix</td>
+    <td>Tensor</td>
   </tr>
   <tr>
     <td>NumPy</td>
