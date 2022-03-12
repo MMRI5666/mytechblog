@@ -71,12 +71,26 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 ## Converting Reality to Numbers
 There are two type main types of reality:
 <ul>
-  <li><b>Continuous</b></li><p>Continuous reality is in form of numeric and can 
+  <li><b>Continuous</b><p>Continuous reality is in form of numeric and can 
   contain many (or possibly infinite) distinct values, e.g., height, exam 
   scores, income, review score</p>
+  </li>
   <li><b>Categorical</b><p>Reality of this type represents discrete values 
     and can contain limited and specific distinct values, such as pet types 
-    (cat or dog), and disease diagnosis (true or false).</p></li>
+    (cat or dog), and disease diagnosis (true or false).</p>
+    <p>There are two approaches for representing categorical data as:
+    <ul>
+      <li><b>Dummy-coding</b>
+        <p>
+          This approach, which is commonly used by most classical machine learning methods, converts a vector of categorical values to a binary vector and assigns the existing values a label of 0 or 1 (true or false), e.g., exam result (pass/fail), house (sold or in-market), fraud detection (1 and 0 or normal and fraudulent transaction).
+        </p>
+      </li>
+      <li><b>One-hot encoding</b>
+      </li>
+
+    </ul>
+    </p>
+  </li>
   
 </ul>
 
