@@ -94,7 +94,10 @@ There are two type main types of reality:
     </ul>
     </p>
   </li>
-  
 </ul>
 
+## Tranposing Vectors and Matrices
+In linear algebra and deep learning, transposing is one of the most commonly used operators. In vectors or matrices, this operator changes the orientation of the rows to columns and vice versa without affecting the values.
     
+![transpose_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/transpose_01.png 
+  "Figure-4, transposing a matrix.")
