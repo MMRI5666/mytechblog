@@ -36,7 +36,6 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 
 <br>
 ## Data Types
-<br>
 <table>
   <tr>
     <th>Object</th>
