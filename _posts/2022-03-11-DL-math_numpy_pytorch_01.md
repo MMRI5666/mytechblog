@@ -106,6 +106,7 @@ In linear algebra and deep learning, transposing is one of the most commonly use
 
 The following codes show how to use NumPy and PyTorch to transpose:
 *   In NumPy:
+
 ```python
   # import libraries<br>
   import numpy as np<br>
@@ -127,5 +128,11 @@ print(nmxT)
 nmxTT = nmxT.T
 print(nmxTT)
 ```
+    [[1 5]
+    [2 6]
+    [3 7]
+    [4 8]]
+    [[1 2 3 4]
+    [5 6 7 8]]
 
-*   
+*   In PyTorch:
