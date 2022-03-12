@@ -74,9 +74,9 @@ There are two type main types of reality:
   <li><b>Continuous</b></li><p>Continuous reality is in form of numeric and can 
   contain many (or possibly infinite) distinct values, e.g., height, exam 
   scores, income, review score</p>
-  <li><b>Categorical</b>Reality of this type represents discrete values 
+  <li><b>Categorical</b><p>Reality of this type represents discrete values 
     and can contain limited and specific distinct values, such as pet types 
-    (cat or dog), and disease diagnosis (true or false).</li>
+    (cat or dog), and disease diagnosis (true or false).</p></li>
   
 </ul>
 
