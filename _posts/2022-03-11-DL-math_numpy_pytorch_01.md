@@ -104,7 +104,8 @@ In linear algebra and deep learning, transposing is one of the most commonly use
   
   {% include note.html text="The transpose of a transposed vector/matrix is exactly the same as the original vector/matrix" %}
 
-The codes, underneath, show how to transpose in NumPy and PyTorch:
+The following codes show how to use NumPy and PyTorch to transpose:
+*   In NumPy:
 ```python
   # import libraries<br>
   import numpy as np<br>
@@ -126,9 +127,5 @@ print(nmxT)
 nmxTT = nmxT.T
 print(nmxTT)
 ```
-  [[1 5]
- [2 6]
- [3 7]
- [4 8]]
-[[1 2 3 4]
- [5 6 7 8]]
+
+*   
