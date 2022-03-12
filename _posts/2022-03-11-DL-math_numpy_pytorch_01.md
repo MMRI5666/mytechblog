@@ -66,3 +66,7 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
     <td>Tensor</td>
   </tr>
 </table>
+
+
+## Converting Reality to Numbers
+
