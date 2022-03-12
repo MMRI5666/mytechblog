@@ -71,8 +71,10 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 ## Converting Reality to Numbers
 There are two type main types of reality:
 <ul>
-  <li>Continuous</li><p>Continuous reality is in form of numeric and can 
-  contains many (possibly infinite) distinct values, e.g., height, exam, 
+  <li><b>Continuous</b></li><p>Continuous reality is in form of numeric and can 
+  contain many (or possibly infinite) distinct values, e.g., height, exam 
   scores, income, review score</p>
-  <li>Categorical</li>
+  <li><b>Categorical</b?</li>Reality of this type represents discrete values 
+    and can contain limited and specific distinct values, such as pet types 
+    (cat or dog), and disease diagnosis (true or false).
 </ul>
