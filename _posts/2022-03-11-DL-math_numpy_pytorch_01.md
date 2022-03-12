@@ -102,11 +102,11 @@ In linear algebra and deep learning, transposing is one of the most commonly use
 ![transpose_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/transpose_01.png 
   "Figure-5, transposing a matrix.")
 
-<p>The codes, underneath, show how to transpose in NumPy and PyTorch:
+<div>The codes, underneath, show how to transpose in NumPy and PyTorch:
 <ul>
   <li>
     Transposing in NumPy:
     
   </li>
 </ul>
-</p>
+</div>
