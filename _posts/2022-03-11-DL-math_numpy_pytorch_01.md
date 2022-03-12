@@ -101,6 +101,9 @@ In linear algebra and deep learning, transposing is one of the most commonly use
     
 ![transpose_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/transpose_01.png 
   "Figure-5, transposing a matrix.")
+  
+  {% include definition.html text="The composition of applying <em>softmax</em>, and then taking the <em>log likelihood</em> of that is called <em>cross-entropy loss</em>, and is available in PyTorch as nn.CrossEntropLoss (which practically does <em>log_softmax</em> and then <em>nll_loss</em><br>
+&emsp;<b>loss_func = nn.CrossEntropyLoss()</b>" %}
 
 The codes, underneath, show how to transpose in NumPy and PyTorch:
 ```python
