@@ -162,6 +162,6 @@ print(tnsTT)
   {% include note.html text="In NumPy and PyTorch there are 
   functions to calculating transpoe, nemaly <em>np.transpose()</em> 
   and <em>torch.transpose()</em>, but the forms 
-  <em>narray.T</em> and <em>tensor.T</em> are more commonly used" %}
+  <em>narray.T</em> and <em>tensor.T</em> are more commonly used." %}
 
 
