@@ -38,17 +38,22 @@ Figure-4, <a href="https://lisaong.github.io/mldds-courseware/01_GettingStarted/
 <table>
   <tr>
     <th>Objects</th>
-    <th>Math</th>
-    <th>NumPy</th>
-    <th>PyTorch</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Math</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <td>NumPy</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+    <tr>
+    <td>PyTorch</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
