@@ -14,3 +14,4 @@ Basically, the gradient of a function <em>f</em> is the dual to its <em>total de
 ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent.md/gradient_derivative_01.svg)
 
 ## How much a deep learning algorithm affected by a local minima?
+Local minima are always a risk in most optimizing iterative search algorithms, and gradient descent is no exception. Gradient descent undoubtedly guides the minizing loss in deep learning algorithms to the minima, but there is no guarantee to find a global minimum. We are now interested in understanding how being stuck in a local minima can affect deep learning algorithms. 
