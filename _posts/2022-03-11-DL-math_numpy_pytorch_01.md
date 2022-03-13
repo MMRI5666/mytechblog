@@ -187,10 +187,41 @@ and the following figure shows the <em>Dot Product</em> operation over two vecto
 ![dot_product_expression_04.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_04.png 
 "Figure-7, Dot product mathematical operation in schematics.")
 
-  {% include note.html text="As seen in Figure-7, dot product 
-  operation is feasible between two vectors/matrices when the 
-  number of elements in the first one's row(s) is equal to 
-  the number of elements in column(s) of the second." %}
+{% include note.html text="As seen in Figure-7, dot product 
+operation is feasible between two vectors/matrices when the 
+number of elements in the first one's row(s) is equal to 
+the number of elements in column(s) of the second." %}
   
-  
+The following codes show how to calculate dot product 
+using NumPy and PyTorch:
+*   In NumPy:
 
+```python
+# create two vectors
+nvec1 = np.array([1, 2, 3, 4])
+nvec2 = np.array([0, 1, 0, -1])
+
+# calcuate dot product using function
+print(np.dot(nvec1, nvec2))
+
+#calculate dot product via basic computation
+print(np.sum(nvec1 * nvec2))```
+   -2
+   -2
+
+
+*   In PyTorch:
+
+```python
+# create two vectors
+nvec1 = np.array([1, 2, 3, 4])
+nvec2 = np.array([0, 1, 0, -1])
+
+# calcuate dot product using function
+print(np.dot(nvec1, nvec2))
+
+#calculate dot product via basic computation
+print(np.sum(nvec1 * nvec2))```
+-2
+-2
+  
