@@ -82,12 +82,21 @@ There are two type main types of reality:
     <ul>
       <li><b>Dummy-coding</b>
         <p>
-          This approach, which is commonly used by most classical machine learning methods, converts a vector of categorical values to a binary vector and assigns the existing values a label of 0 or 1 (true or false), e.g., exam result (pass/fail), house (sold or in-market), fraud detection (1 and 0 or normal and fraudulent transaction).
+          This approach, which is commonly used by most classical machine 
+          learning methods, converts a vector of categorical values to a 
+          binary vector and assigns the existing values a label of 0 or 
+          1 (true or false), e.g., exam result (pass/fail), 
+          house (sold or in-market), fraud detection (1 and 0 or normal 
+          and fraudulent transaction).
         </p>
       </li>
       <li><b>One-hot encoding</b>
         <p>
-           The functionality of this approach is basically similar to <em>Dummy-coding</em>, but applies to multi-categorical values and creates a matrix, rather than a vector, to wrap up the assigned labels. In this matrix structure, columns and rows correspond to the categories and observations respectively. 
+           The functionality of this approach is basically similar to 
+          <em>Dummy-coding</em>, but applies to multi-categorical 
+          values and creates a matrix, rather than a vector, to 
+          wrap up the assigned labels. In this matrix structure, 
+          columns and rows correspond to the categories and observations respectively. 
         </p>
       </li>
 
@@ -164,4 +173,9 @@ print(tnsTT)
   and <em>torch.transpose()</em>, but the forms 
   <em>narray.T</em> and <em>tensor.T</em> are more commonly used." %}
 
+## Dot Product
+This is one of the most important operator in all applied mathematics, 
+and deep learning accordingly. The following expression shows how to 
+represent this mathematic operation:
 
+![dot_product_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_01.png)
