@@ -213,15 +213,15 @@ print(np.sum(nvec1 * nvec2))```
 *   In PyTorch:
 
 ```python
-# create two vectors
-nvec1 = np.array([1, 2, 3, 4])
-nvec2 = np.array([0, 1, 0, -1])
+# create two tensors
+tns1 = torch.tensor([1, 2, 3, 4])
+tns2 = torch.tensor([0, 1, 0, -1])
 
-# calcuate dot product using function
-print(np.dot(nvec1, nvec2))
+# dot product via function
+print(torch.dot(tns1, tns2))
 
-#calculate dot product via basic computation
-print(np.sum(nvec1 * nvec2))```
--2
--2
-  
+# calculate dot product via basic math operations
+print(torch.sum(tns1 * tns2))
+```
+    tensor(-2)
+    tensor(-2)
