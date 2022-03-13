@@ -236,7 +236,7 @@ print(torch.sum(tns1 * tns2))
   to correlation coefficient or covariance coefficient.
   </p>
   <p>
-    The dot product is the computational backbone for many operations:
+    The dot product is the computational backbone for many operations:<br>
     <b>Statistics</b>: Correlation, minimum-squares, entropy, PCA<br>
     <b>Signal processing</b>: Fourier transform, filtering<br>
     <b>Science</b>: Geometry, physics, mechanics<br>
