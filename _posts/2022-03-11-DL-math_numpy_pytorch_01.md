@@ -178,4 +178,4 @@ This is one of the most important operator in all applied mathematics,
 and deep learning accordingly. The following expression shows how to 
 represent this mathematic operation:
 
-![dot_product_expression_01.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_01.png)
+![dot_product_expression_02.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_02.png)
