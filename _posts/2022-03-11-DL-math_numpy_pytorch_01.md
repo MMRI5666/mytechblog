@@ -179,8 +179,10 @@ This is one of the most important operator in all applied mathematics,
 and deep learning accordingly. The following expression shows how to 
 represent this mathematic operation:
 
-![dot_product_expression_02.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_02.png)
+![dot_product_expression_02.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_02.png 
+"Figure-6, dot product mathematical operation representation.")
 
 and the following figure shows the <em>Dot Product</em> operation over two vectors. This operation can simplly generalized over matrices.
 
-![dot_product_expression_04.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_04.png)
+![dot_product_expression_04.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_04.png 
+"Figure-7, Dot product mathematical operation in schematics.")
