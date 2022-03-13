@@ -172,6 +172,7 @@ print(tnsTT)
   functions to calculating transpoe, nemaly <em>np.transpose()</em> 
   and <em>torch.transpose()</em>, but the forms 
   <em>narray.T</em> and <em>tensor.T</em> are more commonly used." %}
+<br>
 
 ## Dot Product
 This is one of the most important operator in all applied mathematics, 
@@ -179,3 +180,7 @@ and deep learning accordingly. The following expression shows how to
 represent this mathematic operation:
 
 ![dot_product_expression_02.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_02.png)
+
+and the following figure shows the <em>Dot Product</em> operation over two vectors. This operation can simplly generalized over matrices.
+
+![dot_product_expression_04.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_04.png)
