@@ -186,3 +186,11 @@ and the following figure shows the <em>Dot Product</em> operation over two vecto
 
 ![dot_product_expression_04.png](/mytechblog/images/2022-03-11-DL-math_numpy_pytorch_01/dot_product_expression_04.png 
 "Figure-7, Dot product mathematical operation in schematics.")
+
+  {% include note.html text="As seen in Figure-7, dot product 
+  operation is feasible between two vectors/matrices when the 
+  number of elements in the first one's row(s) is equal to 
+  the number of elements in column(s) of the second." %}
+  
+  
+
