@@ -233,6 +233,16 @@ print(torch.sum(tns1 * tns2))
   <p>The dot product is a single number that reflects the commonalities 
   within two objects, such as vectors, matrices, tensors, signals, images). 
   In a statistical context, the description of dot product can correspond 
-  to correlation coefficient or covariance coefficient." %}
+  to correlation coefficient or covariance coefficient.
+  <p>
+    The dot product is the computational backbone for many operations:
+    <span>Statistics: Correlation, minimum-squares, entropy, PCA</span>
+    <span>Signal processing: Fourier transform, filtering</span>
+    <spanScience: Geometry, physics, mechanics</span>
+    <span>Linear algebra: Projection, transformations, multiplication</span>
+    <span>Deep learning: Convolutin, matrix multiplication, 
+      Gram matrix (used in style transfer</span>
+  </p>
+  " %}
 
   
