@@ -1,4 +1,4 @@
-# Gridient Descent
+# Gradient Descent
 
 
 Here's the table of contents:
