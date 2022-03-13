@@ -229,7 +229,7 @@ print(torch.sum(tns1 * tns2))
     tensor(-2)
     tensor(-2)
     
-{% include note.html text="<b>Interpretation of the <em>Dot Product</em></b>:
+{% include important.html text="<b>Interpretation of the <em>Dot Product</em></b>:
   <p>The dot product is a single number that reflects the commonalities 
   within two objects, such as vectors, matrices, tensors, signals, images). 
   In a statistical context, the description of dot product can correspond 
