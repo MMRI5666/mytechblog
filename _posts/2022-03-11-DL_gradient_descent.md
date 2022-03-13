@@ -11,5 +11,6 @@ Gradient descent is by far the most crucial mathematical concept used in deep le
 
 The dradient of a function is closely related to its derivative. 
 Basically, the gradient of a function <em>f</em> is the dual to its <em>total derivative</em>, or in other words, they are related in that the <em>dot product</em> of the gradient of <em>f</em> at the point <em>p</em> with another tangent vector <em>v</em> equals the <em>directional derivative</em> of <em>f</em>, which is depicted as below:
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent.md/gradient_derivative_01.svg)
 
 From the calculus we know that a minimum of a function happens in the point in which the function's derivative is  equal to zero.
