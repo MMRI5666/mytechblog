@@ -12,6 +12,7 @@ Here's the table of contents:
 <p>The gradient of a function is closely related to its derivative. Basically, the gradient of a function <em>f</em> is the dual to its <em>total derivative</em>, or in other words, they are related in that the <em>dot product</em> of the gradient of <em>f</em> at the point <em>p</em> with another tangent vector <em>v</em> equals the <em>directional derivative</em> of <em>f</em>, which is depicted as below:
   
 ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent.md/gradient_derivative_01.svg)
+  
 </p>
 
 ## How much is a deep learning algorithm impacted by <em>local minimums</em>?
