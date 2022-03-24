@@ -132,3 +132,29 @@ ax[1].set_ylabel('Derivative')
 plt.show()
 ```
 ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0103.png)
+
+## Finding solution using NumPy
+
+```python
+# define derivative function of f(x)
+def derivf(x):
+  return 6 * x -3
+```
+
+```python
+# random starting point
+x = np.linspace(-2, 2, 2000)
+localmin = np.random.choice(a=x, size=1)
+print(localmin)
+
+# learning parameters
+learning_rate = 0.01
+training_epochs = 175
+
+# run through training and store all the results
+modelparams = np.zeros((training_epochs, 2))
+for i in range(training_epochs):
+  grad = derivf(localmin)
+  localmin = localmin - learning_rate * grad
+  modelparams[i, :] = localmin, grad
+```
