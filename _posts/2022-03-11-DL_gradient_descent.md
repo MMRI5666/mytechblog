@@ -67,7 +67,8 @@ edges = torch.randn(2)
 print(f'start={edges.min()}, end={edges.max()}')
 
 # randomly generate 100 points within the start and end
-xt = ((edges.max() - edges.min()) * torch.rand(100) + edges.min()).requires_grad_()
+xt = ((edges.max() - edges.min()) * torch.rand(100) + \
+    edges.min()).requires_grad_()
 xt.data.min()
 ```
     start=0.021666323766112328, end=0.20076826214790344
@@ -81,6 +82,7 @@ train_epochs = 150
 # run through training and store all the results
 modelparams = np.zeros((train_epochs, 2))
 
+# iteratively search for function's minimum
 for i in range(train_epochs):
   yt = f(xt).sum()
   yt.backward()
@@ -89,3 +91,26 @@ for i in range(train_epochs):
   modelparams[i, 1] = xt.grad.data.min()
   xt.grad = None
 ```
+
+### Plotting the result
+```python
+# plot the results
+
+x = torch.linspace(-2, 2, 2000).requires_grad_()
+y = f(x).sum()
+y.backward()
+xgrd = x.grad
+
+plt.plot(x.data.detach().numpy(), f(x).detach().numpy(),
+         x.data.detach().numpy(), xgrd.detach().numpy())
+
+plt.grid()
+plt.xlabel('x')
+plt.ylabel('y=f(x)')
+plt.legend(['y', 'dy'])
+plt.scatter(modelparams[train_epochs-1, 0], f(modelparams[train_epochs-1, 0]), color='red')
+plt.scatter(modelparams[train_epochs-1, 0], modelparams[train_epochs-1, 1], color='brown')
+plt.legend(['f(x)', 'df', 'f(x) min', 'df at min'])
+plt.show()
+```
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0102.png)
