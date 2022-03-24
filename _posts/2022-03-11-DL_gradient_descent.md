@@ -19,4 +19,4 @@ The gradient of a function is closely related to its derivative. Basically, the 
 
 ## Gradient Descent in 1D
 This section shows, through an example, how to minimize a function using tracking its gradient and find a near minimum solution and the value of variable at the function's minimum. The funciton is as below:
-<center><p>y = f(x) = 3x<sup>2</sup> + 3x + 4</center></p>
+<p><center>y = f(x) = 3x<sup>2</sup> + 3x + 4</center></p>
