@@ -108,8 +108,10 @@ plt.grid()
 plt.xlabel('x')
 plt.ylabel('y=f(x)')
 plt.legend(['y', 'dy'])
-plt.scatter(modelparams[train_epochs-1, 0], f(modelparams[train_epochs-1, 0]), color='red')
-plt.scatter(modelparams[train_epochs-1, 0], modelparams[train_epochs-1, 1], color='brown')
+plt.scatter(modelparams[train_epochs-1, 0], 
+            f(modelparams[train_epochs-1, 0]), color='red')
+plt.scatter(modelparams[train_epochs-1, 0], 
+            modelparams[train_epochs-1, 1], color='brown')
 plt.legend(['f(x)', 'df', 'f(x) min', 'df at min'])
 plt.show()
 ```
