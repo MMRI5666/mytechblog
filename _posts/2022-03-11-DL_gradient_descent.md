@@ -60,3 +60,32 @@ plt.show()
 
 ### Finging solution using PyTorch
 A randomly generated dataset for the variable is used to start the search for the near minimum value for the function and variable value. This proves that gradient-based minimizing has no effect on the initial solution and converges effectively to the minimum point. The minimizing, meanwhile, is not compromized by the local minimum in this case.
+
+```python
+# randomly generate the start and end points
+edges = torch.randn(2)
+print(f'start={edges.min()}, end={edges.max()}')
+
+# randomly generate 100 points within the start and end
+xt = ((edges.max() - edges.min()) * torch.rand(100) + edges.min()).requires_grad_()
+xt.data.min()
+```
+    start=0.021666323766112328, end=0.20076826214790344
+    tensor(0.0295)
+
+```python
+# learning parameters
+learn_rate = 0.01
+train_epochs = 150
+
+# run through training and store all the results
+modelparams = np.zeros((train_epochs, 2))
+
+for i in range(train_epochs):
+  yt = f(xt).sum()
+  yt.backward()
+  xt.data -= learn_rate * xt.grad.data
+  modelparams[i, 0] = xt.data.min()
+  modelparams[i, 1] = xt.grad.data.min()
+  xt.grad = None
+```
