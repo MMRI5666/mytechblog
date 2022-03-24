@@ -116,3 +116,19 @@ plt.legend(['f(x)', 'df', 'f(x) min', 'df at min'])
 plt.show()
 ```
 ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0102.png)
+
+### Plotting local minimum and its correspoding dradient value over the iterations
+```python
+# plot the gradient over iterations
+fig, ax = plt.subplots(1, 2, figsize=(12, 4))
+
+for i in range(2):
+  ax[i].plot(modelparams[:, i], 'o-')
+  ax[i].set_xlabel('Iteration')
+  ax[i].set_title(f'Final estimated minimum: {modelparams[train_epochs-1, 0]:.5f}')
+
+ax[0].set_ylabel('Local minimum')
+ax[1].set_ylabel('Derivative')
+plt.show()
+```
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0103.png)
