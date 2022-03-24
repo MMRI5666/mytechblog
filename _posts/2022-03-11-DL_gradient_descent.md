@@ -158,3 +158,5 @@ for i in range(training_epochs):
   localmin = localmin - learning_rate * grad
   modelparams[i, :] = localmin, grad
 ```
+
+Plotting the solution, as well as plotting the tracking of how the search iterations converge to the local minima and derivatives values are identical to the figures in the previous sub-section.
