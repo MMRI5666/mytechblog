@@ -56,4 +56,4 @@ plt.ylabel('y=f(x)')
 plt.legend(['y', 'dy'])
 plt.show()
 ```
-    ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0101.png)
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0101.png)
