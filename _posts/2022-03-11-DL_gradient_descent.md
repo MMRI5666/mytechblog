@@ -57,3 +57,6 @@ plt.legend(['y', 'dy'])
 plt.show()
 ```
 ![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0101.png)
+
+### Finging solution using PyTorch
+A randomly generated dataset for the variable is used to start the search for the near minimum value for the function and variable value. This proves that gradient-based minimizing has no effect on the initial solution and converges effectively to the minimum point. The minimizing, meanwhile, is not compromized by the local minimum in this case.
