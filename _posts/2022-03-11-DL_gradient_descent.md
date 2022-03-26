@@ -164,6 +164,6 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 <br><br>
 
 ## Vanishing Gradient Problem
-When minimization of a function, as shown in Figure 4, begins at point <em>s</em>, the derivative's value is negative, and it moves in the opposite direction of the derivate at that point with a step size proportional to the magnitude of the derivate. As the minimization process progresses, the derivative becomes flatter, and each subsequent step size becomes smaller as a result. In practise, the deviate value appears to be approaching zero, causing the minimization process to run longer than the number of training epochs before reaching the local minima.
+When minimization of a function, as shown in Figure 4, begins at point <em>s</em>, the derivative's value is negative, and it moves in the opposite direction of the derivate at that point with a step size proportional to the magnitude of the derivate. As the minimization process progresses, the derivative becomes flatter, and each subsequent step size becomes smaller as a result. In practice, the deviate value appears to be approaching zero, causing the minimization process to run longer than the number of training epochs before reaching the local minima. This phenmonen is called <em>vanishing gradient descent</em>.
 
 ![gradient_descent_0104_s.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_s.png "Figure 4 - Vanishing gradient problem.")
