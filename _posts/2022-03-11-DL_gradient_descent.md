@@ -161,6 +161,8 @@ for i in range(training_epochs):
 
 Plotting the solution, as well as plotting the tracking of how the search iterations converge to the local minima and derivatives values are identical to the figures in the previous sub-section.
 
-<br><br><br>
+<br><br>
+
+## Vanishing Gradient Problem
 
 ![gradient_descent_0104_r.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_r.png "Figure 4 - Vanishing gradient problem.")
