@@ -163,4 +163,4 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 
 <br><br><br>
 
-![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/2022-03-26_11-50-39_1.png)
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104.png)
