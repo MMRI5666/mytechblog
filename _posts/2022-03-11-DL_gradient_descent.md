@@ -160,3 +160,7 @@ for i in range(training_epochs):
 ```
 
 Plotting the solution, as well as plotting the tracking of how the search iterations converge to the local minima and derivatives values are identical to the figures in the previous sub-section.
+
+<br><br><br>
+
+![gradient_derivative_01.svg](/mytechblog/images/2022-03-11-DL_gradient_descent/2022-03-26_11-50-39_1.png)
