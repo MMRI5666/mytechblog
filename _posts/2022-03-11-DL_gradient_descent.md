@@ -166,4 +166,4 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 ## Vanishing Gradient Problem
 
 
-![gradient_descent_0104_r.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_n.png "Figure 4 - Vanishing gradient problem.")
+![gradient_descent_0104_r.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_s.png "Figure 4 - Vanishing gradient problem.")
