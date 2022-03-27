@@ -203,17 +203,17 @@ The problem of vanishing gradient can also be relieved by using an architecture 
 Figure-7 depicts the exploding gradient in an intuitive manner. Everything appears to work properly until point <em>m</em>, when the gradient begins to decrease from point <em>s</em>. The function's derivative, however, is so steep at point m that the derivative has a magnitude negative value. The gradient is expected to shift right, approaching the global minimum. However, due to the steepness of the derivative, it jumps to point <em>p</em>, causing the global minimum to be missed. This problem results in an unstable network, which is not able to learn from the training data, and at worst results in bad solution contains NaN weight values that can no longer be updated.
 </p>
 <p>
-There are some signals to detect exploding gradients throughout the model training as outlined below:
-1.  Your model is struggling to get traction on your training data (poor loss).
-2.  A large change in loss occurs over the epochs as a result of the instability in the model.
-3.  During training, the model loss becomes NaN.
+There are some signals to detect exploding gradients throughout the model training as outlined below:<br>
+1.  Your model is struggling to get traction on your training data (poor loss).<br>
+2.  A large change in loss occurs over the epochs as a result of the instability in the model.<br>
+3.  During training, the model loss becomes NaN.<br>
 </p>
 
 <p>
-The reasons for exploding gradients:
-1.  Incorrect selection of the learning rate, resulting in large weight updates.
-2.  Poor data preparation led to large differences in the target variable.
-3.  The loss function was poorly chosen, allowing large error values to be calculated.
+The reasons for exploding gradients:<br>
+1.  Incorrect selection of the learning rate, resulting in large weight updates.<br>
+2.  Poor data preparation led to large differences in the target variable.<br>
+3.  The loss function was poorly chosen, allowing large error values to be calculated.<br>
 </p>
 
 ![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
