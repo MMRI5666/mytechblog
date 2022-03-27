@@ -191,7 +191,7 @@ The simplicity of computing the Sigmoid's derivative function is the reason for 
 ![gradient_descent_0109.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0109.png "Figure 6, activation functions.")
   4.  <b>Batch normalization</b><br>
 A layer in the network is added right before the activation layer to transform all of the input data to a reasonable range of values and prevent them from being saturated by the activation function. This new layer is in charge of standardizing and normalizing the input from the previous layer before sending it to the activation layer. Normalization is the transformation of data into a normal distribution with a mean of zero and a standard deviation of one. Since the batch normalization layer functions as a regularizer, it can also be used to meet the requirements of other regularisation techniques.
-  6.  Different architecture
+  6.  <b>Different architecture</b><br>
 The problem of vanishing gradient can also be relieved by using an architecture that appears more resistant to this deficiency, like the <em>Long Short Term Memory</em? (LSTM).The LSTM is an RNN architecture that allows the model to maintain the long-distance dependencies and prevent the VG by letting the gradient also flow unchanged. An LSTM unit consists of a cell, an input gate, an output gate, and a forget gate. The unit cell can retain the data for the desired number of time intervals.
 
 
