@@ -189,6 +189,7 @@ Random weight initialization allows the model to be trained with different start
 2.  <b>Using non-saturating activation functions</b><br>
 The simplicity of computing the Sigmoid's derivative function is the reason for this function to be the most commonly used activation function. However, we have seen that the drawback to this function is a high exposure to the risk vanishing gradient, which is why we have classified it under saturated activation functions. On the other hand, there are some better alternatives such as <em>Rectified Linear Unit</em> (ReLU) do not saturate when receiving positive values, resulting in being more resilient to the vanishing gradient. However, it faces the problem of dying ReLUs, which means some neurons stop generating anything other than zeroes. This problem can be resolved by using Leaky ReLU instead of ReLU, which can address this issue.<br>
 ![gradient_descent_0109.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0109.png "Figure 6, activation functions.")
-  4.  Batch normalization
-  5.  Different architecture
-  6.  Residual networks
+  4.  <b>Batch normalization</b><br>
+In order to transform all the input data to activation layer to a reasonable range of value and prevent them from being saturated by the activation function, a layer in the network is added right before activation layer. This new layer is responsible for standardizing and normalizing the input, which is coming from preceeding layer, and conducting them to the activation layer. Normalization addresses a process of transforming the data to fit a normal distribution with a mean zero and standard deviation one. Since the batch normaliztion layer functions like a regularizer, using this measure also meet the requirement for other regularization techniques.
+  6.  Different architecture
+  7.  Residual networks
