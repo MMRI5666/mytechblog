@@ -200,3 +200,4 @@ The problem of vanishing gradient can also be relieved by using an architecture 
   
 ## Exploding Gradient problem
 
+![gradient_descent_0111.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0111.png "Figure 7, exploding gradient.")
