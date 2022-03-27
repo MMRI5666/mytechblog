@@ -197,3 +197,6 @@ The problem of vanishing gradient can also be relieved by using an architecture 
 
   8.  <b>Residual networks</b><br>
   A residual neural network (ResNet) utilize skip connections or shortcuts to skip over some layers. The ResNets are typically implemented with double or three-layer skips, which contains nonlinearities (ReLU) and batch normalization in between. These skip connections helps the model training process to avoid the VG problem.
+  
+## Exploding Gradient problem
+
