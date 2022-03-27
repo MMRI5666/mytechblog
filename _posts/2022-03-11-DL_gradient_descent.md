@@ -187,7 +187,7 @@ There are some ways poroposed to alleviate the vanishing gradient descent in dee
 Random weight initialization allows the model to be trained with different starting points that may be more conducive to learning. Choosing either too large or too small weights causes some of the non-linear activation functions, such as the sigmoid function, to return very small values, almost equal to zero. <em>Xavier initialization</em> is a way that selects the weights of the network from an intermediate range of values, while passing through the various layers, in such a way that the variance is not significant.
 </p>
 
-  3.  Using non-saturating activation functions
+  2.  Using non-saturating activation functions
   4.  Batch normalization
   5.  Different architecture
   6.  Residual networks
