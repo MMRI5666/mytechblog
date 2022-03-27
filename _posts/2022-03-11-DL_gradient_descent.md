@@ -209,4 +209,11 @@ There are some signals to detect exploding gradients throughout the model traini
 3.  During training, the model loss becomes NaN.
 </p>
 
+<p>
+The reasons for exploding gradients:
+1.  Incorrect selection of the learning rate, resulting in large weight updates.
+2.  Poor data preparation led to large differences in the target variable.
+3.  The loss function was poorly chosen, allowing large error values to be calculated.
+</p>
+
 ![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
