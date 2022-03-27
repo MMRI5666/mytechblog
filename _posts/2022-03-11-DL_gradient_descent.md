@@ -186,7 +186,8 @@ There are some ways poroposed to alleviate the vanishing gradient descent in dee
 1.  Weight initialization<br>
 Random weight initialization allows the model to be trained with different starting points that may be more conducive to learning. Choosing either too large or too small weights causes some of the non-linear activation functions, such as the sigmoid function, to return very small values, almost equal to zero. <em>Xavier initialization</em> is a way that selects the weights of the network from an intermediate range of values, while passing through the various layers, in such a way that the variance is not significant.
 
-  2.  Using non-saturating activation functions
+2.  Using non-saturating activation functions</br>
+Easy to compute derivative function is the reason for sigmoid function to be the most common used activation fuction. However, we saw that the drawback of using this function is high exposure to the risk vanishing gradient, which is the reason to categorize it under the saturated activation functions. On the other hand, there are some better alternatives such as <em>Rectified Linear Unit</em> (ReLU) that does not make saturation when receiving positive values, resulting in being more resilient to the vanishing gradient. However, it suffers from the problem of dying ReLU, which means some neurons stop outputting nothing but zero. This problem leads in replacing ReLU with <em>Leaky ReLU</em>, which can overcome this problem.
   4.  Batch normalization
   5.  Different architecture
   6.  Residual networks
