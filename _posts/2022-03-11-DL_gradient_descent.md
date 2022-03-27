@@ -167,7 +167,7 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 <p>When minimization of a function, as shown in Figure 4, begins at point <em>s</em>, the derivative's value is negative, and it moves in the opposite direction of the derivate at that point with a step size proportional to the magnitude of the derivate. As the minimization process progresses, the derivative becomes flatter, and each subsequent step size becomes smaller as a result. In practice, the deviate value appears to be approaching zero, causing the minimization process to run longer than the number of training epochs before reaching the local minima, i.e., point <em>p</em>. This phenmonen is called <em>vanishing gradient descent</em>.
 </p>
 
-![gradient_descent_0104_s.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_s.png "Figure 4 - Vanishing gradient problem.")
+![gradient_descent_0104_s.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0104_s.png "Figure-4, Vanishing gradient problem.")
 
 <p>
 Because the learning relies on the gradient's value in deep learning based on multiple hidden neural networks, the vanishing gradient descent occurrence prevents the model from learning effectively. The initial layers of this neural network are critical because these layers are where the neural network's building blocks are learned from the input dataset's simple patterns (features). The network's derivatives are the result of multiplying the preceding layers, layer by layer, from the last to the first in the backpropagation step of a NN model training process. This results in an exponential decrease in the derivative as it approaches zero, eventually disappearing.
@@ -178,7 +178,7 @@ Because the learning relies on the gradient's value in deep learning based on mu
 <p>
 It is important to understand why gradient descent tends to zero. As we know, neural networks traditionally use <em>sigmoid function</em> activation function within the layers. Figure 5, which shows the sigmoid function and its derivative, can interpreted in a way that the sigmoid function maps any input value, regardless of its magnitude, to a value within the range of o to 1. In fact, when it receives either a large or a small input value, it saturates the mapping values to the red zones on the right or left side reppectively, which their corresponding derivative values will be very close to zero. 
 </p>
-![gradient_descent_0107.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0107.png "Figure 5, Sigmoid function and its derivative.")
+![gradient_descent_0107.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0107.png "Figure-5, Sigmoid function and its derivative.")
 
 ### Solution
 There are some ways poroposed to alleviate the vanishing gradient descent in deep learning, which are outlined as followed:
@@ -188,7 +188,7 @@ Random weight initialization allows the model to be trained with different start
 
 2.  <b>Using non-saturating activation functions</b><br>
 The simplicity of computing the Sigmoid's derivative function is the reason for this function to be the most commonly used activation function. However, we have seen that the drawback to this function is a high exposure to the risk vanishing gradient, which is why we have classified it under saturated activation functions. On the other hand, there are some better alternatives such as <em>Rectified Linear Unit</em> (ReLU) do not saturate when receiving positive values, resulting in being more resilient to the vanishing gradient. However, it faces the problem of dying ReLUs, which means some neurons stop generating anything other than zeroes. This problem can be resolved by using Leaky ReLU instead of ReLU, which can address this issue.<br>
-![gradient_descent_0109.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0109.png "Figure 6, activation functions.")
+![gradient_descent_0109.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0109.png "Figure-6, activation functions.")
   4.  <b>Batch normalization</b><br>
 A layer in the network is added right before the activation layer to transform all of the input data to a reasonable range of values and prevent them from being saturated by the activation function. This new layer is in charge of standardizing and normalizing the input from the previous layer before sending it to the activation layer. Normalization is the transformation of data into a normal distribution with a mean of zero and a standard deviation of one. Since the batch normalization layer functions as a regularizer, it can also be used to meet the requirements of other regularisation techniques.
   6.  <b>Different architecture</b><br>
@@ -199,5 +199,6 @@ The problem of vanishing gradient can also be relieved by using an architecture 
   A residual neural network (ResNet) utilize skip connections or shortcuts to skip over some layers. The ResNets are typically implemented with double or three-layer skips, which contains nonlinearities (ReLU) and batch normalization in between. These skip connections helps the model training process to avoid the VG problem.
   
 ## Exploding Gradient problem
+Figure-7 depicts the exploding gradient in an intuitive manner. Everything appears to work properly until point <em>m</em>, when the gradient begins to decrease from point <em>s</em>. The function's derivative, however, is so steep at point m that the derivative has a magnitude negative value. The gradient is expected to shift right, approaching the global minimum. However, due to the steepness of the derivative, it jumps to point <em>p</em>, causing the global minimum to be missed.
 
-![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure 7, exploding gradient.")
+![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
