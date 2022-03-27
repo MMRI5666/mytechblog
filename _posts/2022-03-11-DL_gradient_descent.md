@@ -204,9 +204,9 @@ Figure-7 depicts the exploding gradient in an intuitive manner. Everything appea
 </p>
 <p>
 There are some signals to detect exploding gradients throughout the model training as outlined below:
-1.  The model is unable to get traction on your training data, e.g., poor loss.
-2.  the model is unstable, resulting in large change in loss accors the epochs.
-3.  the model loss goes to NaN during training.
+1.  Your model is struggling to get traction on your training data (poor loss).
+2.  A large change in loss occurs over the epochs as a result of the instability in the model.
+3.  During training, the model loss becomes NaN.
 </p>
 
 ![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
