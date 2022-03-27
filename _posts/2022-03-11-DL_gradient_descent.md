@@ -179,3 +179,15 @@ Because the learning relies on the gradient's value in deep learning based on mu
 It is important to understand why gradient descent tends to zero. As we know, neural networks traditionally use <em>sigmoid function</em> activation function within the layers. Figure 5, which shows the sigmoid function and its derivative, can interpreted in a way that the sigmoid function maps any input value, regardless of its magnitude, to a value within the range of o to 1. In fact, when it receives either a large or a small input value, it saturates the mapping values to the red zones on the right or left side reppectively, which their corresponding derivative values will be very close to zero. 
 </p>
 ![gradient_descent_0107.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0107.png "Figure 5, Sigmoid function and its derivative.")
+
+### Solution
+There are some ways poroposed to alleviate the vanishing gradient descent in deep learning, which are outlined as followed:
+  1.  Weight initialization
+<p>
+  Random weight initialization allows model training to lunch with different starting point that might be a better place for the model to start learning. Choosing either too large or too small weights causes some of the non-linear activation function, such as sigmoid function, return very small value, almost equal to zero. <em>Xavier initialization</em> is a way that selects the weights of the network, while passing through the various layers, from a intermediate range of values, such a way that the variance is not significant.
+</p>
+
+  3.  Using non-saturating activation functions
+  4.  Batch normalization
+  5.  Different architecture
+  6.  Residual networks
