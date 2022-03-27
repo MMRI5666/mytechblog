@@ -172,3 +172,6 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 <p>
 Because the learning relies on the gradient's value in deep learning based on multiple hidden neural networks, the vanishing gradient descent occurrence prevents the model from learning effectively. The initial layers of this neural network are critical because these layers are where the neural network's building blocks are learned from the input dataset's simple patterns (features). The network's derivatives are the result of multiplying the preceding layers, layer by layer, from the last to the first in the backpropagation step of a NN model training process. This results in an exponential decrease in the derivative as it approaches zero, eventually disappearing.
 </p>
+<p>
+  In the following the effect of gradient vanish on NN model training will be investigated in more details. Firstly, we should bear in the mind that the goal of backpropagation is to adjust the weights and biases  accros the neural network based on the minimizing the loss. Whike the loss is iteratively decreasing throuout the training epochs, the error is also propagated back to the networi till reaching the layers closest to the input. This propagation is taken into effect through taking partial derivative of the gradient.
+</p>
