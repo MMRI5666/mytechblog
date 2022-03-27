@@ -222,7 +222,7 @@ The reasons for exploding gradients:<br>
 
 ### Solutions:
 <p>
-  Changing the error derivative before propagating it backwards and using it to update the weights is a common solution to exploding gradients. As the error derivative is rescaled, the weights will also be updated, drastically reducing overflows and underflows. Two main methods for updating the error derivative are as follows:
-  * Gradient scaling
-  * Gradient clipping
+  Changing the error derivative before propagating it backwards and using it to update the weights is a common solution to exploding gradients. As the error derivative is rescaled, the weights will also be updated, drastically reducing overflows and underflows. Two main methods for updating the error derivative are as follows:<br>
+* Gradient scaling
+* Gradient clipping
 </p>
