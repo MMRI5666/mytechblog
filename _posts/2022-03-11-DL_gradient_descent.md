@@ -184,7 +184,7 @@ It is important to understand why gradient descent tends to zero. As we know, ne
 There are some ways poroposed to alleviate the vanishing gradient descent in deep learning, which are outlined as followed:
   <p>
   1.  Weight initialization
-Random weight initialization allows model training to lunch with different starting point that might be a better place for the model to start learning. Choosing either too large or too small weights causes some of the non-linear activation function, such as sigmoid function, return very small value, almost equal to zero. <em>Xavier initialization</em> is a way that selects the weights of the network, while passing through the various layers, from a intermediate range of values, such a way that the variance is not significant.
+Random weight initialization allows the model to be trained with different starting points that may be more conducive to learning. Choosing either too large or too small weights causes some of the non-linear activation functions, such as the sigmoid function, to return very small values, almost equal to zero. <em>Xavier initialization</em> is a way that selects the weights of the network from an intermediate range of values, while passing through the various layers, in such a way that the variance is not significant.
 </p>
 
   3.  Using non-saturating activation functions
