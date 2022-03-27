@@ -175,3 +175,6 @@ Because the learning relies on the gradient's value in deep learning based on mu
 <p>
   The impact of gradient vanishing on NN model training will be investigated in greater depth. To begin, we should bear in mind that the goal of backpropagation is to minimize the loss by adjusting the weights and biases across the neural network based on minimizing the loss. Propagating the error back to the layers very close to the input layer is taken into effect via backpropagation process. A partial derivative of the gradient is used to implement this propagation. This makes it easier to explain when the derivative is exponentially approaching zero, the adjustment of the model parameters, i.e., weights, biases, and propagation of the error to the initial layers, and then the model training will be disrupted. As a result, the neural network's initial layers are rendered useless since they are not able to learn anything.
 </p>
+<p>
+We need to know why gradient descent tends to zero. As we know, the neural networks tradtitionally use <em>sigmoid function</em> as <em>activation function</em> within the layers
+</p>
