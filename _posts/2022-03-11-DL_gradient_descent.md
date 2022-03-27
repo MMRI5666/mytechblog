@@ -195,4 +195,5 @@ A layer in the network is added right before the activation layer to transform a
 The problem of vanishing gradient can also be relieved by using an architecture that appears more resistant to this deficiency, like the <em>Long Short Term Memory</em? (LSTM).The LSTM is an RNN architecture that allows the model to maintain the long-distance dependencies and prevent the VG by letting the gradient also flow unchanged. An LSTM unit consists of a cell, an input gate, an output gate, and a forget gate. The unit cell can retain the data for the desired number of time intervals.
 
 
-  8.  Residual networks
+  8.  <b>Residual networks</b><br>
+  A residual neural network (ResNet) utilize skip connections or shortcuts to skip over some layers. The ResNets are typically implemented with double or three-layer skips, which contains nonlinearities (ReLU) and batch normalization in between. These skip connections helps the model training process to avoid the VG problem.
