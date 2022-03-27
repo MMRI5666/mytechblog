@@ -202,6 +202,10 @@ The problem of vanishing gradient can also be relieved by using an architecture 
 <p>
 Figure-7 depicts the exploding gradient in an intuitive manner. Everything appears to work properly until point <em>m</em>, when the gradient begins to decrease from point <em>s</em>. The function's derivative, however, is so steep at point m that the derivative has a magnitude negative value. The gradient is expected to shift right, approaching the global minimum. However, due to the steepness of the derivative, it jumps to point <em>p</em>, causing the global minimum to be missed. This problem results in an unstable network, which is not able to learn from the training data, and at worst results in bad solution contains NaN weight values that can no longer be updated.
 </p>
+
+![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
+
+
 <p>
 There are some signals to detect exploding gradients throughout the model training as outlined below:<br>
 1.  Your model is struggling to get traction on your training data (poor loss).<br>
@@ -216,4 +220,7 @@ The reasons for exploding gradients:<br>
 3.  The loss function was poorly chosen, allowing large error values to be calculated.<br>
 </p>
 
-![gradient_descent_0113.png](/mytechblog/images/2022-03-11-DL_gradient_descent/gradient_descent_0113.png "Figure-7, exploding gradient.")
+### Solutions:
+<p>
+  Changing the error derivative before propagating it backwards and using it to update the weights is a common solution to exploding gradients. As the error derivative is rescaled, the weights will also be updated, drastically reducing overflows and underflows.
+</p>
