@@ -164,6 +164,7 @@ Plotting the solution, as well as plotting the tracking of how the search iterat
 <br><br>
 
 ## Vanishing Gradient Problem
+### Overview
 <p>When minimization of a function, as shown in Figure 4, begins at point <em>s</em>, the derivative's value is negative, and it moves in the opposite direction of the derivate at that point with a step size proportional to the magnitude of the derivate. As the minimization process progresses, the derivative becomes flatter, and each subsequent step size becomes smaller as a result. In practice, the deviate value appears to be approaching zero, causing the minimization process to run longer than the number of training epochs before reaching the local minima, i.e., point <em>p</em>. This phenmonen is called <em>vanishing gradient descent</em>.
 </p>
 
@@ -199,6 +200,7 @@ The problem of vanishing gradient can also be relieved by using an architecture 
   A residual neural network (ResNet) utilize skip connections or shortcuts to skip over some layers. The ResNets are typically implemented with double or three-layer skips, which contains nonlinearities (ReLU) and batch normalization in between. These skip connections helps the model training process to avoid the VG problem.
   
 ## Exploding Gradient problem
+### Overview
 <p>
 Figure-7 depicts the exploding gradient in an intuitive manner. Everything appears to work properly until point <em>m</em>, when the gradient begins to decrease from point <em>s</em>. The function's derivative, however, is so steep at point m that the derivative has a magnitude negative value. The gradient is expected to shift right, approaching the global minimum. However, due to the steepness of the derivative, it jumps to point <em>p</em>, causing the global minimum to be missed. This problem results in an unstable network, which is not able to learn from the training data, and at worst results in bad solution contains NaN weight values that can no longer be updated.
 </p>
