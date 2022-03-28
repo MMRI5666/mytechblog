@@ -223,5 +223,5 @@ The reasons for exploding gradients:<br>
 ### Solutions:
   Changing the error derivative before propagating it backwards and using it to update the weights is a common solution to exploding gradients. As the error derivative is rescaled, the weights will also be updated, drastically reducing overflows and underflows. Two main methods for updating the error derivative are as follows:<br>
 
-*   Gradient scaling
-*   Gradient clipping
+*   Gradient scaling: invlolves normalizing the error gradient vector to fit a normal distribution with the mean of zero and variance of 1.
+*   Gradient clipping: entails a technique if a gradient exceeds an expected range, a specific minimum or maximum value is enforced element-by-element.
